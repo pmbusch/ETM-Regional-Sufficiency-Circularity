@@ -1,0 +1,2305 @@
+"c","Year","Sales"
+"Algeria",2015,0
+"Algeria",2016,0
+"Algeria",2017,0
+"Algeria",2018,0
+"Algeria",2019,0
+"Algeria",2020,2
+"Algeria",2021,1
+"Algeria",2022,1
+"Algeria",2023,0
+"Algeria",2024,3979
+"Algeria",2025,5760
+"Algeria",2026,7928
+"Algeria",2027,10957
+"Algeria",2028,14618
+"Algeria",2029,18690
+"Algeria",2030,70929
+"Algeria",2031,93727
+"Algeria",2032,119383
+"Algeria",2033,147897
+"Algeria",2034,179265
+"Algeria",2035,213358
+"Algeria",2036,257516
+"Algeria",2037,305564
+"Algeria",2038,357374
+"Algeria",2039,411567
+"Algeria",2040,469375
+"Algeria",2041,492858
+"Algeria",2042,516340
+"Algeria",2043,539822
+"Algeria",2044,563304
+"Algeria",2045,586786
+"Algeria",2046,610267
+"Algeria",2047,633750
+"Algeria",2048,657231
+"Algeria",2049,680714
+"Algeria",2050,704195
+"Argentina",2015,0
+"Argentina",2016,0
+"Argentina",2017,0
+"Argentina",2018,6
+"Argentina",2019,35
+"Argentina",2020,26
+"Argentina",2021,85
+"Argentina",2022,55
+"Argentina",2023,587
+"Argentina",2024,12613
+"Argentina",2025,15458
+"Argentina",2026,18802
+"Argentina",2027,22795
+"Argentina",2028,27427
+"Argentina",2029,53090
+"Argentina",2030,126609
+"Argentina",2031,159577
+"Argentina",2032,195093
+"Argentina",2033,233159
+"Argentina",2034,273773
+"Argentina",2035,316935
+"Argentina",2036,351658
+"Argentina",2037,388079
+"Argentina",2038,426199
+"Argentina",2039,466019
+"Argentina",2040,507538
+"Argentina",2041,550756
+"Argentina",2042,595673
+"Argentina",2043,642289
+"Argentina",2044,690604
+"Argentina",2045,740619
+"Argentina",2046,761858
+"Argentina",2047,783097
+"Argentina",2048,804336
+"Argentina",2049,825576
+"Argentina",2050,846815
+"Australia",2015,893
+"Australia",2016,584
+"Australia",2017,1421
+"Australia",2018,1803
+"Australia",2019,6289
+"Australia",2020,5240
+"Australia",2021,17193
+"Australia",2022,33465
+"Australia",2023,87414
+"Australia",2024,94987
+"Australia",2025,120513
+"Australia",2026,137225
+"Australia",2027,280794
+"Australia",2028,416411
+"Australia",2029,470977
+"Australia",2030,549592
+"Australia",2031,592211
+"Australia",2032,638192
+"Australia",2033,687757
+"Australia",2034,741037
+"Australia",2035,798537
+"Australia",2036,827862
+"Australia",2037,857389
+"Australia",2038,887116
+"Australia",2039,917046
+"Australia",2040,947176
+"Australia",2041,950753
+"Australia",2042,954330
+"Australia",2043,957907
+"Australia",2044,961483
+"Australia",2045,965060
+"Australia",2046,968637
+"Australia",2047,972214
+"Australia",2048,975791
+"Australia",2049,979368
+"Australia",2050,982945
+"Austria",2015,1807
+"Austria",2016,4013
+"Austria",2017,5690
+"Austria",2018,7235
+"Austria",2019,9719
+"Austria",2020,16655
+"Austria",2021,35552
+"Austria",2022,35813
+"Austria",2023,50877
+"Austria",2024,78988
+"Austria",2025,110298
+"Austria",2026,154658
+"Austria",2027,188664
+"Austria",2028,224154
+"Austria",2029,257639
+"Austria",2030,293707
+"Austria",2031,301646
+"Austria",2032,309678
+"Austria",2033,318091
+"Austria",2034,323635
+"Austria",2035,329179
+"Austria",2036,334724
+"Austria",2037,340270
+"Austria",2038,345821
+"Austria",2039,351359
+"Austria",2040,356899
+"Austria",2041,362438
+"Austria",2042,367977
+"Austria",2043,373515
+"Austria",2044,379055
+"Austria",2045,384594
+"Austria",2046,390132
+"Austria",2047,395671
+"Austria",2048,401210
+"Austria",2049,406750
+"Austria",2050,412288
+"Belgium",2015,1704
+"Belgium",2016,2465
+"Belgium",2017,3222
+"Belgium",2018,4401
+"Belgium",2019,9330
+"Belgium",2020,15469
+"Belgium",2021,22865
+"Belgium",2022,40025
+"Belgium",2023,96875
+"Belgium",2024,145399
+"Belgium",2025,196916
+"Belgium",2026,216186
+"Belgium",2027,272537
+"Belgium",2028,328172
+"Belgium",2029,383066
+"Belgium",2030,448869
+"Belgium",2031,443492
+"Belgium",2032,438114
+"Belgium",2033,432737
+"Belgium",2034,427359
+"Belgium",2035,421982
+"Belgium",2036,416605
+"Belgium",2037,411227
+"Belgium",2038,405850
+"Belgium",2039,400472
+"Belgium",2040,395095
+"Belgium",2041,389717
+"Belgium",2042,384340
+"Belgium",2043,378963
+"Belgium",2044,373585
+"Belgium",2045,368208
+"Belgium",2046,362830
+"Belgium",2047,357453
+"Belgium",2048,352075
+"Belgium",2049,346698
+"Belgium",2050,341321
+"Bolivia",2015,0
+"Bolivia",2016,0
+"Bolivia",2017,0
+"Bolivia",2018,0
+"Bolivia",2019,0
+"Bolivia",2020,0
+"Bolivia",2021,0
+"Bolivia",2022,53
+"Bolivia",2023,112
+"Bolivia",2024,2913
+"Bolivia",2025,3714
+"Bolivia",2026,4447
+"Bolivia",2027,5547
+"Bolivia",2028,8029
+"Bolivia",2029,12718
+"Bolivia",2030,20772
+"Bolivia",2031,25816
+"Bolivia",2032,31540
+"Bolivia",2033,37983
+"Bolivia",2034,43671
+"Bolivia",2035,50367
+"Bolivia",2036,57163
+"Bolivia",2037,64120
+"Bolivia",2038,71323
+"Bolivia",2039,78557
+"Bolivia",2040,86352
+"Bolivia",2041,87941
+"Bolivia",2042,89541
+"Bolivia",2043,91150
+"Bolivia",2044,92762
+"Bolivia",2045,94398
+"Bolivia",2046,95665
+"Bolivia",2047,96933
+"Bolivia",2048,98200
+"Bolivia",2049,99468
+"Bolivia",2050,100735
+"Brazil",2015,0
+"Brazil",2016,28
+"Brazil",2017,76
+"Brazil",2018,75
+"Brazil",2019,97
+"Brazil",2020,694
+"Brazil",2021,2209
+"Brazil",2022,9160
+"Brazil",2023,19438
+"Brazil",2024,93374
+"Brazil",2025,107812
+"Brazil",2026,124328
+"Brazil",2027,143637
+"Brazil",2028,234199
+"Brazil",2029,387754
+"Brazil",2030,641161
+"Brazil",2031,791242
+"Brazil",2032,948608
+"Brazil",2033,1113256
+"Brazil",2034,1285188
+"Brazil",2035,1464403
+"Brazil",2036,1600874
+"Brazil",2037,1742201
+"Brazil",2038,1888383
+"Brazil",2039,2039421
+"Brazil",2040,2195314
+"Brazil",2041,2356063
+"Brazil",2042,2521667
+"Brazil",2043,2692127
+"Brazil",2044,2867442
+"Brazil",2045,3047613
+"Brazil",2046,3108307
+"Brazil",2047,3169001
+"Brazil",2048,3229695
+"Brazil",2049,3290389
+"Brazil",2050,3351083
+"Canada",2015,4553
+"Canada",2016,5182
+"Canada",2017,9666
+"Canada",2018,21307
+"Canada",2019,32402
+"Canada",2020,34806
+"Canada",2021,58726
+"Canada",2022,98574
+"Canada",2023,143201
+"Canada",2024,174808
+"Canada",2025,214543
+"Canada",2026,328243
+"Canada",2027,468772
+"Canada",2028,669225
+"Canada",2029,954469
+"Canada",2030,1358421
+"Canada",2031,1451058
+"Canada",2032,1541739
+"Canada",2033,1645233
+"Canada",2034,1732922
+"Canada",2035,1820054
+"Canada",2036,1817662
+"Canada",2037,1818068
+"Canada",2038,1820056
+"Canada",2039,1820539
+"Canada",2040,1819733
+"Canada",2041,1823206
+"Canada",2042,1829009
+"Canada",2043,1828302
+"Canada",2044,1831465
+"Canada",2045,1841176
+"Canada",2046,1844977
+"Canada",2047,1847991
+"Canada",2048,1850427
+"Canada",2049,1849032
+"Canada",2050,1846613
+"Chile",2015,0
+"Chile",2016,1
+"Chile",2017,45
+"Chile",2018,65
+"Chile",2019,161
+"Chile",2020,167
+"Chile",2021,555
+"Chile",2022,1214
+"Chile",2023,1538
+"Chile",2024,14889
+"Chile",2025,30299
+"Chile",2026,43998
+"Chile",2027,58127
+"Chile",2028,79487
+"Chile",2029,92284
+"Chile",2030,112456
+"Chile",2031,123685
+"Chile",2032,135199
+"Chile",2033,147000
+"Chile",2034,172552
+"Chile",2035,252145
+"Chile",2036,255718
+"Chile",2037,259291
+"Chile",2038,262863
+"Chile",2039,266436
+"Chile",2040,270008
+"Chile",2041,273581
+"Chile",2042,277153
+"Chile",2043,280726
+"Chile",2044,284299
+"Chile",2045,287871
+"Chile",2046,291444
+"Chile",2047,295016
+"Chile",2048,298589
+"Chile",2049,302161
+"Chile",2050,305734
+"China",2015,127757
+"China",2016,286537
+"China",2017,536950
+"China",2018,886780
+"China",2019,973245
+"China",2020,1103512
+"China",2021,2795045
+"China",2022,4699814
+"China",2023,5760512
+"China",2024,6501947
+"China",2025,8568304
+"China",2026,10440209
+"China",2027,12374071
+"China",2028,14374531
+"China",2029,16439291
+"China",2030,18565878
+"China",2031,20118011
+"China",2032,21709818
+"China",2033,23343770
+"China",2034,25022512
+"China",2035,26740797
+"China",2036,27171334
+"China",2037,27601871
+"China",2038,28032408
+"China",2039,28462945
+"China",2040,28893482
+"China",2041,29324019
+"China",2042,29754556
+"China",2043,30185093
+"China",2044,30615630
+"China",2045,31046167
+"China",2046,31476704
+"China",2047,31907241
+"China",2048,32337778
+"China",2049,32768315
+"China",2050,33198852
+"Colombia",2015,193
+"Colombia",2016,198
+"Colombia",2017,136
+"Colombia",2018,389
+"Colombia",2019,960
+"Colombia",2020,822
+"Colombia",2021,952
+"Colombia",2022,2081
+"Colombia",2023,3709
+"Colombia",2024,10579
+"Colombia",2025,12713
+"Colombia",2026,15200
+"Colombia",2027,18076
+"Colombia",2028,25335
+"Colombia",2029,37075
+"Colombia",2030,54044
+"Colombia",2031,78456
+"Colombia",2032,113485
+"Colombia",2033,163707
+"Colombia",2034,235474
+"Colombia",2035,337897
+"Colombia",2036,353870
+"Colombia",2037,369843
+"Colombia",2038,385815
+"Colombia",2039,401788
+"Colombia",2040,417761
+"Colombia",2041,433734
+"Colombia",2042,449707
+"Colombia",2043,465680
+"Colombia",2044,481653
+"Colombia",2045,497626
+"Colombia",2046,513598
+"Colombia",2047,529571
+"Colombia",2048,545544
+"Colombia",2049,561517
+"Colombia",2050,577490
+"Czechia",2015,331
+"Czechia",2016,221
+"Czechia",2017,403
+"Czechia",2018,762
+"Czechia",2019,817
+"Czechia",2020,3309
+"Czechia",2021,2813
+"Czechia",2022,4066
+"Czechia",2023,7888
+"Czechia",2024,58810
+"Czechia",2025,109608
+"Czechia",2026,145775
+"Czechia",2027,191711
+"Czechia",2028,238387
+"Czechia",2029,284958
+"Czechia",2030,335625
+"Czechia",2031,351892
+"Czechia",2032,367535
+"Czechia",2033,383455
+"Czechia",2034,400295
+"Czechia",2035,418705
+"Czechia",2036,436668
+"Czechia",2037,456314
+"Czechia",2038,477089
+"Czechia",2039,500116
+"Czechia",2040,528578
+"Czechia",2041,541145
+"Czechia",2042,553723
+"Czechia",2043,566332
+"Czechia",2044,578952
+"Czechia",2045,591687
+"Czechia",2046,604210
+"Czechia",2047,616733
+"Czechia",2048,629256
+"Czechia",2049,641780
+"Czechia",2050,654304
+"Denmark",2015,4639
+"Denmark",2016,1280
+"Denmark",2017,802
+"Denmark",2018,1613
+"Denmark",2019,5728
+"Denmark",2020,15241
+"Denmark",2021,26265
+"Denmark",2022,32652
+"Denmark",2023,65556
+"Denmark",2024,99212
+"Denmark",2025,136657
+"Denmark",2026,152617
+"Denmark",2027,161579
+"Denmark",2028,163743
+"Denmark",2029,165940
+"Denmark",2030,180399
+"Denmark",2031,181385
+"Denmark",2032,182371
+"Denmark",2033,183356
+"Denmark",2034,184342
+"Denmark",2035,185328
+"Denmark",2036,186313
+"Denmark",2037,187299
+"Denmark",2038,188285
+"Denmark",2039,189270
+"Denmark",2040,190256
+"Denmark",2041,191242
+"Denmark",2042,192227
+"Denmark",2043,193213
+"Denmark",2044,194199
+"Denmark",2045,195184
+"Denmark",2046,196170
+"Denmark",2047,197156
+"Denmark",2048,198141
+"Denmark",2049,199127
+"Denmark",2050,200113
+"Eastern Europe/Central Asia",2015,245
+"Eastern Europe/Central Asia",2016,288
+"Eastern Europe/Central Asia",2017,623
+"Eastern Europe/Central Asia",2018,1209
+"Eastern Europe/Central Asia",2019,835
+"Eastern Europe/Central Asia",2020,906
+"Eastern Europe/Central Asia",2021,1598
+"Eastern Europe/Central Asia",2022,1330
+"Eastern Europe/Central Asia",2023,5352
+"Eastern Europe/Central Asia",2024,50077
+"Eastern Europe/Central Asia",2025,63485
+"Eastern Europe/Central Asia",2026,76265
+"Eastern Europe/Central Asia",2027,96116
+"Eastern Europe/Central Asia",2028,129409
+"Eastern Europe/Central Asia",2029,201819
+"Eastern Europe/Central Asia",2030,334114
+"Eastern Europe/Central Asia",2031,419836
+"Eastern Europe/Central Asia",2032,512267
+"Eastern Europe/Central Asia",2033,613560
+"Eastern Europe/Central Asia",2034,719665
+"Eastern Europe/Central Asia",2035,833119
+"Eastern Europe/Central Asia",2036,973248
+"Eastern Europe/Central Asia",2037,1123744
+"Eastern Europe/Central Asia",2038,1283977
+"Eastern Europe/Central Asia",2039,1450761
+"Eastern Europe/Central Asia",2040,1627870
+"Eastern Europe/Central Asia",2041,1696998
+"Eastern Europe/Central Asia",2042,1767862
+"Eastern Europe/Central Asia",2043,1841342
+"Eastern Europe/Central Asia",2044,1918147
+"Eastern Europe/Central Asia",2045,2005278
+"Eastern Europe/Central Asia",2046,2077058
+"Eastern Europe/Central Asia",2047,2150617
+"Eastern Europe/Central Asia",2048,2226474
+"Eastern Europe/Central Asia",2049,2303431
+"Eastern Europe/Central Asia",2050,2385662
+"Egypt",2015,0
+"Egypt",2016,0
+"Egypt",2017,0
+"Egypt",2018,4
+"Egypt",2019,7
+"Egypt",2020,21
+"Egypt",2021,68
+"Egypt",2022,38
+"Egypt",2023,83
+"Egypt",2024,19511
+"Egypt",2025,23895
+"Egypt",2026,29095
+"Egypt",2027,35191
+"Egypt",2028,42319
+"Egypt",2029,82250
+"Egypt",2030,195179
+"Egypt",2031,245908
+"Egypt",2032,300534
+"Egypt",2033,359058
+"Egypt",2034,421480
+"Egypt",2035,487799
+"Egypt",2036,574925
+"Egypt",2037,667248
+"Egypt",2038,764768
+"Egypt",2039,867485
+"Egypt",2040,975398
+"Egypt",2041,1007878
+"Egypt",2042,1040359
+"Egypt",2043,1072839
+"Egypt",2044,1105319
+"Egypt",2045,1137799
+"Egypt",2046,1170279
+"Egypt",2047,1202759
+"Egypt",2048,1235239
+"Egypt",2049,1267719
+"Egypt",2050,1300199
+"Ethiopia",2015,0
+"Ethiopia",2016,0
+"Ethiopia",2017,0
+"Ethiopia",2018,0
+"Ethiopia",2019,0
+"Ethiopia",2020,0
+"Ethiopia",2021,85
+"Ethiopia",2022,290
+"Ethiopia",2023,481
+"Ethiopia",2024,2648
+"Ethiopia",2025,3834
+"Ethiopia",2026,5274
+"Ethiopia",2027,6807
+"Ethiopia",2028,8410
+"Ethiopia",2029,11208
+"Ethiopia",2030,18375
+"Ethiopia",2031,22528
+"Ethiopia",2032,26926
+"Ethiopia",2033,31591
+"Ethiopia",2034,36379
+"Ethiopia",2035,41461
+"Ethiopia",2036,47772
+"Ethiopia",2037,54685
+"Ethiopia",2038,62083
+"Ethiopia",2039,69241
+"Ethiopia",2040,76805
+"Ethiopia",2041,79820
+"Ethiopia",2042,83808
+"Ethiopia",2043,88171
+"Ethiopia",2044,92862
+"Ethiopia",2045,98016
+"Ethiopia",2046,102883
+"Ethiopia",2047,107801
+"Ethiopia",2048,113085
+"Ethiopia",2049,119101
+"Ethiopia",2050,125726
+"Finland",2015,243
+"Finland",2016,234
+"Finland",2017,566
+"Finland",2018,883
+"Finland",2019,1957
+"Finland",2020,4279
+"Finland",2021,10312
+"Finland",2022,15212
+"Finland",2023,31152
+"Finland",2024,50693
+"Finland",2025,72005
+"Finland",2026,82243
+"Finland",2027,89207
+"Finland",2028,96291
+"Finland",2029,101612
+"Finland",2030,122037
+"Finland",2031,126307
+"Finland",2032,130655
+"Finland",2033,136779
+"Finland",2034,140061
+"Finland",2035,143356
+"Finland",2036,146687
+"Finland",2037,150016
+"Finland",2038,153442
+"Finland",2039,156635
+"Finland",2040,159828
+"Finland",2041,163021
+"Finland",2042,166215
+"Finland",2043,169408
+"Finland",2044,172601
+"Finland",2045,175793
+"Finland",2046,178986
+"Finland",2047,182177
+"Finland",2048,185370
+"Finland",2049,188562
+"Finland",2050,191755
+"France",2015,21949
+"France",2016,27743
+"France",2017,32120
+"France",2018,40141
+"France",2019,50765
+"France",2020,122552
+"France",2021,182173
+"France",2022,229037
+"France",2023,336735
+"France",2024,559225
+"France",2025,801571
+"France",2026,1076007
+"France",2027,1368856
+"France",2028,1677515
+"France",2029,1994335
+"France",2030,2339911
+"France",2031,2416187
+"France",2032,2492859
+"France",2033,2572000
+"France",2034,2634813
+"France",2035,2697647
+"France",2036,2760543
+"France",2037,2823434
+"France",2038,2886492
+"France",2039,2949156
+"France",2040,3011820
+"France",2041,3074483
+"France",2042,3137147
+"France",2043,3199812
+"France",2044,3262475
+"France",2045,3325138
+"France",2046,3387801
+"France",2047,3450465
+"France",2048,3513128
+"France",2049,3575791
+"France",2050,3638454
+"Germany",2015,14147
+"Germany",2016,15969
+"Germany",2017,30685
+"Germany",2018,42769
+"Germany",2019,68402
+"Germany",2020,200398
+"Germany",2021,367467
+"Germany",2022,482075
+"Germany",2023,540177
+"Germany",2024,836545
+"Germany",2025,1210945
+"Germany",2026,1579623
+"Germany",2027,1936806
+"Germany",2028,2295408
+"Germany",2029,2655428
+"Germany",2030,3033552
+"Germany",2031,3039595
+"Germany",2032,3045638
+"Germany",2033,3051681
+"Germany",2034,3057724
+"Germany",2035,3063767
+"Germany",2036,3069810
+"Germany",2037,3075853
+"Germany",2038,3081896
+"Germany",2039,3087939
+"Germany",2040,3093982
+"Germany",2041,3100025
+"Germany",2042,3106068
+"Germany",2043,3112111
+"Germany",2044,3118154
+"Germany",2045,3124198
+"Germany",2046,3130241
+"Germany",2047,3136284
+"Germany",2048,3142327
+"Germany",2049,3148370
+"Germany",2050,3154413
+"Greece",2015,34
+"Greece",2016,41
+"Greece",2017,43
+"Greece",2018,79
+"Greece",2019,201
+"Greece",2020,687
+"Greece",2021,2211
+"Greece",2022,3150
+"Greece",2023,7232
+"Greece",2024,46000
+"Greece",2025,78812
+"Greece",2026,104341
+"Greece",2027,150598
+"Greece",2028,197024
+"Greece",2029,237630
+"Greece",2030,276623
+"Greece",2031,298630
+"Greece",2032,320901
+"Greece",2033,345266
+"Greece",2034,347678
+"Greece",2035,350104
+"Greece",2036,352580
+"Greece",2037,355042
+"Greece",2038,357636
+"Greece",2039,359899
+"Greece",2040,362163
+"Greece",2041,364427
+"Greece",2042,366691
+"Greece",2043,368954
+"Greece",2044,371216
+"Greece",2045,373478
+"Greece",2046,375741
+"Greece",2047,378002
+"Greece",2048,380265
+"Greece",2049,382527
+"Greece",2050,384789
+"Hungary",2015,220
+"Hungary",2016,286
+"Hungary",2017,833
+"Hungary",2018,1426
+"Hungary",2019,1899
+"Hungary",2020,3106
+"Hungary",2021,4588
+"Hungary",2022,5237
+"Hungary",2023,6786
+"Hungary",2024,33384
+"Hungary",2025,58651
+"Hungary",2026,79549
+"Hungary",2027,108572
+"Hungary",2028,141110
+"Hungary",2029,174809
+"Hungary",2030,210613
+"Hungary",2031,229630
+"Hungary",2032,247928
+"Hungary",2033,267059
+"Hungary",2034,288672
+"Hungary",2035,298878
+"Hungary",2036,309088
+"Hungary",2037,319305
+"Hungary",2038,329522
+"Hungary",2039,339759
+"Hungary",2040,349947
+"Hungary",2041,360137
+"Hungary",2042,370326
+"Hungary",2043,380515
+"Hungary",2044,390704
+"Hungary",2045,400893
+"Hungary",2046,411082
+"Hungary",2047,421271
+"Hungary",2048,431460
+"Hungary",2049,441649
+"Hungary",2050,451837
+"India",2015,375
+"India",2016,963
+"India",2017,2340
+"India",2018,1797
+"India",2019,792
+"India",2020,4099
+"India",2021,15302
+"India",2022,49609
+"India",2023,83086
+"India",2024,237072
+"India",2025,649632
+"India",2026,849040
+"India",2027,1128503
+"India",2028,1499612
+"India",2029,1990945
+"India",2030,2642787
+"India",2031,2990392
+"India",2032,3353147
+"India",2033,3731053
+"India",2034,4124108
+"India",2035,4532314
+"India",2036,4749184
+"India",2037,4971104
+"India",2038,5198074
+"India",2039,5430094
+"India",2040,5667164
+"India",2041,5793416
+"India",2042,5919668
+"India",2043,6045920
+"India",2044,6172172
+"India",2045,6298424
+"India",2046,6424676
+"India",2047,6550928
+"India",2048,6677180
+"India",2049,6803432
+"India",2050,6929684
+"Indonesia",2015,0
+"Indonesia",2016,0
+"Indonesia",2017,16
+"Indonesia",2018,14
+"Indonesia",2019,102
+"Indonesia",2020,232
+"Indonesia",2021,821
+"Indonesia",2022,10571
+"Indonesia",2023,17116
+"Indonesia",2024,53181
+"Indonesia",2025,72445
+"Indonesia",2026,97756
+"Indonesia",2027,140327
+"Indonesia",2028,234632
+"Indonesia",2029,390776
+"Indonesia",2030,648482
+"Indonesia",2031,749982
+"Indonesia",2032,858296
+"Indonesia",2033,973700
+"Indonesia",2034,1096060
+"Indonesia",2035,1225212
+"Indonesia",2036,1361476
+"Indonesia",2037,1504518
+"Indonesia",2038,1654685
+"Indonesia",2039,1811617
+"Indonesia",2040,1975688
+"Indonesia",2041,2047332
+"Indonesia",2042,2118976
+"Indonesia",2043,2190620
+"Indonesia",2044,2262264
+"Indonesia",2045,2333908
+"Indonesia",2046,2405552
+"Indonesia",2047,2477196
+"Indonesia",2048,2548840
+"Indonesia",2049,2620484
+"Indonesia",2050,2692128
+"Iran",2015,0
+"Iran",2016,0
+"Iran",2017,0
+"Iran",2018,0
+"Iran",2019,0
+"Iran",2020,0
+"Iran",2021,0
+"Iran",2022,0
+"Iran",2023,0
+"Iran",2024,39722
+"Iran",2025,47154
+"Iran",2026,55855
+"Iran",2027,65930
+"Iran",2028,98395
+"Iran",2029,179656
+"Iran",2030,327512
+"Iran",2031,408593
+"Iran",2032,494867
+"Iran",2033,586333
+"Iran",2034,682993
+"Iran",2035,784845
+"Iran",2036,918917
+"Iran",2037,1059913
+"Iran",2038,1207832
+"Iran",2039,1362676
+"Iran",2040,1524443
+"Iran",2041,1567716
+"Iran",2042,1610990
+"Iran",2043,1654264
+"Iran",2044,1697537
+"Iran",2045,1740811
+"Iran",2046,1784084
+"Iran",2047,1827358
+"Iran",2048,1870631
+"Iran",2049,1913905
+"Iran",2050,1957178
+"Ireland",2015,514
+"Ireland",2016,429
+"Ireland",2017,640
+"Ireland",2018,1332
+"Ireland",2019,3790
+"Ireland",2020,4740
+"Ireland",2021,9362
+"Ireland",2022,16386
+"Ireland",2023,23820
+"Ireland",2024,39485
+"Ireland",2025,55702
+"Ireland",2026,72906
+"Ireland",2027,91743
+"Ireland",2028,111062
+"Ireland",2029,131959
+"Ireland",2030,153325
+"Ireland",2031,158834
+"Ireland",2032,164507
+"Ireland",2033,170263
+"Ireland",2034,173580
+"Ireland",2035,176916
+"Ireland",2036,180259
+"Ireland",2037,183609
+"Ireland",2038,186964
+"Ireland",2039,190205
+"Ireland",2040,193448
+"Ireland",2041,196693
+"Ireland",2042,199940
+"Ireland",2043,203189
+"Ireland",2044,206371
+"Ireland",2045,209553
+"Ireland",2046,212736
+"Ireland",2047,215919
+"Ireland",2048,219101
+"Ireland",2049,222284
+"Ireland",2050,225465
+"Israel",2015,3
+"Israel",2016,5
+"Israel",2017,126
+"Israel",2018,130
+"Israel",2019,851
+"Israel",2020,1590
+"Israel",2021,11504
+"Israel",2022,27239
+"Israel",2023,48659
+"Israel",2024,62472
+"Israel",2025,80373
+"Israel",2026,103346
+"Israel",2027,132889
+"Israel",2028,170820
+"Israel",2029,225563
+"Israel",2030,282152
+"Israel",2031,285849
+"Israel",2032,289545
+"Israel",2033,293241
+"Israel",2034,296938
+"Israel",2035,300634
+"Israel",2036,304330
+"Israel",2037,308026
+"Israel",2038,311723
+"Israel",2039,315419
+"Israel",2040,319115
+"Israel",2041,322812
+"Israel",2042,326508
+"Israel",2043,330204
+"Israel",2044,333901
+"Israel",2045,337597
+"Israel",2046,341293
+"Israel",2047,344990
+"Israel",2048,348686
+"Israel",2049,352382
+"Israel",2050,356078
+"Italy",2015,1885
+"Italy",2016,2154
+"Italy",2017,2743
+"Italy",2018,5839
+"Italy",2019,11688
+"Italy",2020,33536
+"Italy",2021,72942
+"Italy",2022,59142
+"Italy",2023,79159
+"Italy",2024,442698
+"Italy",2025,802639
+"Italy",2026,1063884
+"Italy",2027,1337427
+"Italy",2028,1622319
+"Italy",2029,1916080
+"Italy",2030,2232230
+"Italy",2031,2285570
+"Italy",2032,2339215
+"Italy",2033,2394109
+"Italy",2034,2440117
+"Italy",2035,2486128
+"Italy",2036,2532151
+"Italy",2037,2578173
+"Italy",2038,2624226
+"Italy",2039,2670203
+"Italy",2040,2716179
+"Italy",2041,2762156
+"Italy",2042,2808133
+"Italy",2043,2854108
+"Italy",2044,2900085
+"Italy",2045,2946062
+"Italy",2046,2992037
+"Italy",2047,3038014
+"Italy",2048,3083989
+"Italy",2049,3129966
+"Italy",2050,3175943
+"Japan",2015,12667
+"Japan",2016,16717
+"Japan",2017,19066
+"Japan",2018,27376
+"Japan",2019,23648
+"Japan",2020,16418
+"Japan",2021,20248
+"Japan",2022,56432
+"Japan",2023,92105
+"Japan",2024,145007
+"Japan",2025,230533
+"Japan",2026,366033
+"Japan",2027,581236
+"Japan",2028,923358
+"Japan",2029,1466359
+"Japan",2030,2328309
+"Japan",2031,2557030
+"Japan",2032,2784674
+"Japan",2033,3010852
+"Japan",2034,3236345
+"Japan",2035,3460374
+"Japan",2036,3532956
+"Japan",2037,3605164
+"Japan",2038,3676997
+"Japan",2039,3748839
+"Japan",2040,3820305
+"Japan",2041,3811337
+"Japan",2042,3802369
+"Japan",2043,3793400
+"Japan",2044,3784432
+"Japan",2045,3775464
+"Japan",2046,3766496
+"Japan",2047,3757528
+"Japan",2048,3748559
+"Japan",2049,3739591
+"Japan",2050,3730623
+"Kenya",2015,0
+"Kenya",2016,0
+"Kenya",2017,0
+"Kenya",2018,0
+"Kenya",2019,0
+"Kenya",2020,0
+"Kenya",2021,15
+"Kenya",2022,61
+"Kenya",2023,49
+"Kenya",2024,2820
+"Kenya",2025,3420
+"Kenya",2026,4330
+"Kenya",2027,5823
+"Kenya",2028,7973
+"Kenya",2029,14785
+"Kenya",2030,30634
+"Kenya",2031,41469
+"Kenya",2032,54915
+"Kenya",2033,71110
+"Kenya",2034,83178
+"Kenya",2035,96407
+"Kenya",2036,113577
+"Kenya",2037,133815
+"Kenya",2038,159842
+"Kenya",2039,179756
+"Kenya",2040,200985
+"Kenya",2041,213348
+"Kenya",2042,226356
+"Kenya",2043,240067
+"Kenya",2044,250590
+"Kenya",2045,261324
+"Kenya",2046,272285
+"Kenya",2047,283496
+"Kenya",2048,294963
+"Kenya",2049,303909
+"Kenya",2050,312854
+"Malaysia",2015,37
+"Malaysia",2016,110
+"Malaysia",2017,145
+"Malaysia",2018,62
+"Malaysia",2019,45
+"Malaysia",2020,87
+"Malaysia",2021,288
+"Malaysia",2022,1393
+"Malaysia",2023,9226
+"Malaysia",2024,48490
+"Malaysia",2025,90059
+"Malaysia",2026,159780
+"Malaysia",2027,189424
+"Malaysia",2028,273640
+"Malaysia",2029,368702
+"Malaysia",2030,477411
+"Malaysia",2031,517492
+"Malaysia",2032,559240
+"Malaysia",2033,602561
+"Malaysia",2034,647561
+"Malaysia",2035,694141
+"Malaysia",2036,743427
+"Malaysia",2037,798988
+"Malaysia",2038,855851
+"Malaysia",2039,967724
+"Malaysia",2040,1247168
+"Malaysia",2041,1278724
+"Malaysia",2042,1310281
+"Malaysia",2043,1341837
+"Malaysia",2044,1373394
+"Malaysia",2045,1404951
+"Malaysia",2046,1436507
+"Malaysia",2047,1468064
+"Malaysia",2048,1499620
+"Malaysia",2049,1531177
+"Malaysia",2050,1562733
+"Mexico",2015,214
+"Mexico",2016,153
+"Mexico",2017,363
+"Mexico",2018,303
+"Mexico",2019,950
+"Mexico",2020,1906
+"Mexico",2021,3546
+"Mexico",2022,7595
+"Mexico",2023,15995
+"Mexico",2024,10136
+"Mexico",2025,21130
+"Mexico",2026,35915
+"Mexico",2027,62946
+"Mexico",2028,109538
+"Mexico",2029,186509
+"Mexico",2030,317993
+"Mexico",2031,412151
+"Mexico",2032,514567
+"Mexico",2033,624689
+"Mexico",2034,742688
+"Mexico",2035,869491
+"Mexico",2036,1004106
+"Mexico",2037,1146639
+"Mexico",2038,1298537
+"Mexico",2039,1457048
+"Mexico",2040,1623858
+"Mexico",2041,1684649
+"Mexico",2042,1746043
+"Mexico",2043,1808879
+"Mexico",2044,1872288
+"Mexico",2045,1941016
+"Mexico",2046,2000175
+"Mexico",2047,2059333
+"Mexico",2048,2118491
+"Mexico",2049,2177651
+"Mexico",2050,2236809
+"Morocco",2015,25
+"Morocco",2016,2
+"Morocco",2017,8
+"Morocco",2018,5
+"Morocco",2019,12
+"Morocco",2020,48
+"Morocco",2021,257
+"Morocco",2022,901
+"Morocco",2023,795
+"Morocco",2024,4641
+"Morocco",2025,6338
+"Morocco",2026,7647
+"Morocco",2027,10711
+"Morocco",2028,13718
+"Morocco",2029,17451
+"Morocco",2030,26604
+"Morocco",2031,32150
+"Morocco",2032,39063
+"Morocco",2033,46451
+"Morocco",2034,54293
+"Morocco",2035,62454
+"Morocco",2036,71845
+"Morocco",2037,81469
+"Morocco",2038,91535
+"Morocco",2039,102244
+"Morocco",2040,114144
+"Morocco",2041,117868
+"Morocco",2042,121592
+"Morocco",2043,125316
+"Morocco",2044,129040
+"Morocco",2045,132765
+"Morocco",2046,136488
+"Morocco",2047,140210
+"Morocco",2048,143932
+"Morocco",2049,147654
+"Morocco",2050,151376
+"Netherlands",2015,4128
+"Netherlands",2016,4340
+"Netherlands",2017,8572
+"Netherlands",2018,24961
+"Netherlands",2019,62891
+"Netherlands",2020,74996
+"Netherlands",2021,67505
+"Netherlands",2022,77828
+"Netherlands",2023,122743
+"Netherlands",2024,196697
+"Netherlands",2025,264371
+"Netherlands",2026,301080
+"Netherlands",2027,377129
+"Netherlands",2028,397065
+"Netherlands",2029,414858
+"Netherlands",2030,470517
+"Netherlands",2031,486814
+"Netherlands",2032,503463
+"Netherlands",2033,521445
+"Netherlands",2034,531145
+"Netherlands",2035,540904
+"Netherlands",2036,550842
+"Netherlands",2037,560757
+"Netherlands",2038,571157
+"Netherlands",2039,580381
+"Netherlands",2040,589606
+"Netherlands",2041,598830
+"Netherlands",2042,608054
+"Netherlands",2043,617278
+"Netherlands",2044,626502
+"Netherlands",2045,635724
+"Netherlands",2046,644947
+"Netherlands",2047,654170
+"Netherlands",2048,663392
+"Netherlands",2049,672615
+"Netherlands",2050,681837
+"New Zealand",2015,101
+"New Zealand",2016,152
+"New Zealand",2017,581
+"New Zealand",2018,808
+"New Zealand",2019,1905
+"New Zealand",2020,1538
+"New Zealand",2021,6839
+"New Zealand",2022,16099
+"New Zealand",2023,21313
+"New Zealand",2024,38404
+"New Zealand",2025,43275
+"New Zealand",2026,57035
+"New Zealand",2027,73287
+"New Zealand",2028,81598
+"New Zealand",2029,90898
+"New Zealand",2030,96907
+"New Zealand",2031,109129
+"New Zealand",2032,124480
+"New Zealand",2033,142300
+"New Zealand",2034,157832
+"New Zealand",2035,168702
+"New Zealand",2036,174902
+"New Zealand",2037,183502
+"New Zealand",2038,197548
+"New Zealand",2039,202859
+"New Zealand",2040,208493
+"New Zealand",2041,214486
+"New Zealand",2042,220877
+"New Zealand",2043,227756
+"New Zealand",2044,230958
+"New Zealand",2045,234258
+"New Zealand",2046,237663
+"New Zealand",2047,241189
+"New Zealand",2048,244834
+"New Zealand",2049,246140
+"New Zealand",2050,247445
+"Nigeria",2015,0
+"Nigeria",2016,0
+"Nigeria",2017,0
+"Nigeria",2018,0
+"Nigeria",2019,0
+"Nigeria",2020,0
+"Nigeria",2021,205
+"Nigeria",2022,642
+"Nigeria",2023,650
+"Nigeria",2024,41960
+"Nigeria",2025,62041
+"Nigeria",2026,82646
+"Nigeria",2027,126836
+"Nigeria",2028,179188
+"Nigeria",2029,225781
+"Nigeria",2030,323150
+"Nigeria",2031,454542
+"Nigeria",2032,598521
+"Nigeria",2033,754813
+"Nigeria",2034,901384
+"Nigeria",2035,1062318
+"Nigeria",2036,1227706
+"Nigeria",2037,1404047
+"Nigeria",2038,1593867
+"Nigeria",2039,1799071
+"Nigeria",2040,2024496
+"Nigeria",2041,2142633
+"Nigeria",2042,2271890
+"Nigeria",2043,2423194
+"Nigeria",2044,2596187
+"Nigeria",2045,2804158
+"Nigeria",2046,2921988
+"Nigeria",2047,3045148
+"Nigeria",2048,3180659
+"Nigeria",2049,3320824
+"Nigeria",2050,3505600
+"Norway",2015,26459
+"Norway",2016,25010
+"Norway",2017,34029
+"Norway",2018,47993
+"Norway",2019,62243
+"Norway",2020,79461
+"Norway",2021,119319
+"Norway",2022,145127
+"Norway",2023,112825
+"Norway",2024,161367
+"Norway",2025,183061
+"Norway",2026,185195
+"Norway",2027,187652
+"Norway",2028,190159
+"Norway",2029,192646
+"Norway",2030,195312
+"Norway",2031,198143
+"Norway",2032,200874
+"Norway",2033,203632
+"Norway",2034,206493
+"Norway",2035,209442
+"Norway",2036,211491
+"Norway",2037,213539
+"Norway",2038,215589
+"Norway",2039,217638
+"Norway",2040,219687
+"Norway",2041,221736
+"Norway",2042,223784
+"Norway",2043,225834
+"Norway",2044,227883
+"Norway",2045,229931
+"Norway",2046,231981
+"Norway",2047,234030
+"Norway",2048,236078
+"Norway",2049,238128
+"Norway",2050,240177
+"Pakistan",2015,0
+"Pakistan",2016,0
+"Pakistan",2017,0
+"Pakistan",2018,0
+"Pakistan",2019,0
+"Pakistan",2020,0
+"Pakistan",2021,28
+"Pakistan",2022,13
+"Pakistan",2023,11
+"Pakistan",2024,56103
+"Pakistan",2025,72403
+"Pakistan",2026,87881
+"Pakistan",2027,123568
+"Pakistan",2028,181081
+"Pakistan",2029,265579
+"Pakistan",2030,388828
+"Pakistan",2031,496658
+"Pakistan",2032,630160
+"Pakistan",2033,791015
+"Pakistan",2034,940987
+"Pakistan",2035,1102661
+"Pakistan",2036,1310485
+"Pakistan",2037,1533538
+"Pakistan",2038,1771830
+"Pakistan",2039,2017727
+"Pakistan",2040,2278178
+"Pakistan",2041,2379865
+"Pakistan",2042,2481935
+"Pakistan",2043,2584370
+"Pakistan",2044,2682169
+"Pakistan",2045,2779968
+"Pakistan",2046,2877767
+"Pakistan",2047,2975565
+"Pakistan",2048,3073365
+"Pakistan",2049,3171163
+"Pakistan",2050,3268962
+"Peru",2015,0
+"Peru",2016,0
+"Peru",2017,0
+"Peru",2018,0
+"Peru",2019,20
+"Peru",2020,26
+"Peru",2021,37
+"Peru",2022,159
+"Peru",2023,281
+"Peru",2024,4123
+"Peru",2025,5542
+"Peru",2026,6248
+"Peru",2027,7935
+"Peru",2028,11409
+"Peru",2029,18475
+"Peru",2030,30447
+"Peru",2031,38254
+"Peru",2032,46983
+"Peru",2033,56704
+"Peru",2034,65329
+"Peru",2035,76101
+"Peru",2036,85692
+"Peru",2037,95951
+"Peru",2038,107264
+"Peru",2039,117943
+"Peru",2040,129651
+"Peru",2041,132954
+"Peru",2042,136285
+"Peru",2043,139642
+"Peru",2044,143012
+"Peru",2045,146438
+"Peru",2046,149127
+"Peru",2047,151818
+"Peru",2048,154508
+"Peru",2049,157198
+"Peru",2050,159888
+"Philippines",2015,0
+"Philippines",2016,0
+"Philippines",2017,0
+"Philippines",2018,0
+"Philippines",2019,350
+"Philippines",2020,267
+"Philippines",2021,219
+"Philippines",2022,267
+"Philippines",2023,298
+"Philippines",2024,14132
+"Philippines",2025,16611
+"Philippines",2026,19484
+"Philippines",2027,22773
+"Philippines",2028,30345
+"Philippines",2029,76572
+"Philippines",2030,193106
+"Philippines",2031,213536
+"Philippines",2032,234705
+"Philippines",2033,256611
+"Philippines",2034,279256
+"Philippines",2035,302639
+"Philippines",2036,335591
+"Philippines",2037,369650
+"Philippines",2038,404816
+"Philippines",2039,441089
+"Philippines",2040,478470
+"Philippines",2041,487695
+"Philippines",2042,496921
+"Philippines",2043,506147
+"Philippines",2044,515373
+"Philippines",2045,524598
+"Philippines",2046,533824
+"Philippines",2047,543050
+"Philippines",2048,552276
+"Philippines",2049,561501
+"Philippines",2050,570727
+"Poland",2015,122
+"Poland",2016,170
+"Poland",2017,556
+"Poland",2018,747
+"Poland",2019,1595
+"Poland",2020,3746
+"Poland",2021,7263
+"Poland",2022,12746
+"Poland",2023,19682
+"Poland",2024,160504
+"Poland",2025,296044
+"Poland",2026,405499
+"Poland",2027,570549
+"Poland",2028,739429
+"Poland",2029,903631
+"Poland",2030,1084847
+"Poland",2031,1177831
+"Poland",2032,1270812
+"Poland",2033,1369980
+"Poland",2034,1477275
+"Poland",2035,1599221
+"Poland",2036,1715728
+"Poland",2037,1842657
+"Poland",2038,1977649
+"Poland",2039,2129095
+"Poland",2040,2327138
+"Poland",2041,2407290
+"Poland",2042,2487990
+"Poland",2043,2570001
+"Poland",2044,2652518
+"Poland",2045,2739873
+"Poland",2046,2818479
+"Poland",2047,2897086
+"Poland",2048,2975694
+"Poland",2049,3054301
+"Poland",2050,3132909
+"Portugal",2015,816
+"Portugal",2016,912
+"Portugal",2017,1946
+"Portugal",2018,4736
+"Portugal",2019,7106
+"Portugal",2020,8111
+"Portugal",2021,13797
+"Portugal",2022,19339
+"Portugal",2023,39025
+"Portugal",2024,59726
+"Portugal",2025,92218
+"Portugal",2026,122253
+"Portugal",2027,156273
+"Portugal",2028,191506
+"Portugal",2029,226954
+"Portugal",2030,265879
+"Portugal",2031,275331
+"Portugal",2032,284949
+"Portugal",2033,295493
+"Portugal",2034,301059
+"Portugal",2035,306625
+"Portugal",2036,312192
+"Portugal",2037,317758
+"Portugal",2038,323329
+"Portugal",2039,328891
+"Portugal",2040,334453
+"Portugal",2041,340015
+"Portugal",2042,345576
+"Portugal",2043,351138
+"Portugal",2044,356700
+"Portugal",2045,362262
+"Portugal",2046,367825
+"Portugal",2047,373386
+"Portugal",2048,378948
+"Portugal",2049,384510
+"Portugal",2050,390072
+"Rest of EU",2015,370
+"Rest of EU",2016,710
+"Rest of EU",2017,1228
+"Rest of EU",2018,2148
+"Rest of EU",2019,3313
+"Rest of EU",2020,6607
+"Rest of EU",2021,11024
+"Rest of EU",2022,16604
+"Rest of EU",2023,28253
+"Rest of EU",2024,86686
+"Rest of EU",2025,144994
+"Rest of EU",2026,186584
+"Rest of EU",2027,249001
+"Rest of EU",2028,309269
+"Rest of EU",2029,363042
+"Rest of EU",2030,419673
+"Rest of EU",2031,437336
+"Rest of EU",2032,454381
+"Rest of EU",2033,472122
+"Rest of EU",2034,490168
+"Rest of EU",2035,510678
+"Rest of EU",2036,529455
+"Rest of EU",2037,550484
+"Rest of EU",2038,573032
+"Rest of EU",2039,597738
+"Rest of EU",2040,629910
+"Rest of EU",2041,640340
+"Rest of EU",2042,651041
+"Rest of EU",2043,662350
+"Rest of EU",2044,673850
+"Rest of EU",2045,687491
+"Rest of EU",2046,696841
+"Rest of EU",2047,706218
+"Rest of EU",2048,715615
+"Rest of EU",2049,725036
+"Rest of EU",2050,734485
+"Rest of Middle East/Africa",2015,0
+"Rest of Middle East/Africa",2016,0
+"Rest of Middle East/Africa",2017,161
+"Rest of Middle East/Africa",2018,176
+"Rest of Middle East/Africa",2019,404
+"Rest of Middle East/Africa",2020,468
+"Rest of Middle East/Africa",2021,2120
+"Rest of Middle East/Africa",2022,2988
+"Rest of Middle East/Africa",2023,6195
+"Rest of Middle East/Africa",2024,89226
+"Rest of Middle East/Africa",2025,118493
+"Rest of Middle East/Africa",2026,148692
+"Rest of Middle East/Africa",2027,197372
+"Rest of Middle East/Africa",2028,272851
+"Rest of Middle East/Africa",2029,421227
+"Rest of Middle East/Africa",2030,718789
+"Rest of Middle East/Africa",2031,909230
+"Rest of Middle East/Africa",2032,1122175
+"Rest of Middle East/Africa",2033,1354937
+"Rest of Middle East/Africa",2034,1569690
+"Rest of Middle East/Africa",2035,1804183
+"Rest of Middle East/Africa",2036,2094451
+"Rest of Middle East/Africa",2037,2401219
+"Rest of Middle East/Africa",2038,2731547
+"Rest of Middle East/Africa",2039,3071667
+"Rest of Middle East/Africa",2040,3445066
+"Rest of Middle East/Africa",2041,3592360
+"Rest of Middle East/Africa",2042,3747055
+"Rest of Middle East/Africa",2043,3918665
+"Rest of Middle East/Africa",2044,4086152
+"Rest of Middle East/Africa",2045,4277855
+"Rest of Middle East/Africa",2046,4425504
+"Rest of Middle East/Africa",2047,4576641
+"Rest of Middle East/Africa",2048,4732184
+"Rest of Middle East/Africa",2049,4881669
+"Rest of Middle East/Africa",2050,5036075
+"Rest of South America",2015,27
+"Rest of South America",2016,55
+"Rest of South America",2017,88
+"Rest of South America",2018,275
+"Rest of South America",2019,623
+"Rest of South America",2020,890
+"Rest of South America",2021,2856
+"Rest of South America",2022,5779
+"Rest of South America",2023,11350
+"Rest of South America",2024,29205
+"Rest of South America",2025,36524
+"Rest of South America",2026,42523
+"Rest of South America",2027,54371
+"Rest of South America",2028,79710
+"Rest of South America",2029,120628
+"Rest of South America",2030,187823
+"Rest of South America",2031,230476
+"Rest of South America",2032,276335
+"Rest of South America",2033,324207
+"Rest of South America",2034,370106
+"Rest of South America",2035,419736
+"Rest of South America",2036,479299
+"Rest of South America",2037,541122
+"Rest of South America",2038,607198
+"Rest of South America",2039,673075
+"Rest of South America",2040,743328
+"Rest of South America",2041,763070
+"Rest of South America",2042,784647
+"Rest of South America",2043,807635
+"Rest of South America",2044,828978
+"Rest of South America",2045,854427
+"Rest of South America",2046,871399
+"Rest of South America",2047,888578
+"Rest of South America",2048,906143
+"Rest of South America",2049,923859
+"Rest of South America",2050,942879
+"Rest of South Asia/Oceania",2015,3152
+"Rest of South Asia/Oceania",2016,471
+"Rest of South Asia/Oceania",2017,310
+"Rest of South Asia/Oceania",2018,54
+"Rest of South Asia/Oceania",2019,175
+"Rest of South Asia/Oceania",2020,256
+"Rest of South Asia/Oceania",2021,706
+"Rest of South Asia/Oceania",2022,1680
+"Rest of South Asia/Oceania",2023,5161
+"Rest of South Asia/Oceania",2024,36583
+"Rest of South Asia/Oceania",2025,58645
+"Rest of South Asia/Oceania",2026,73529
+"Rest of South Asia/Oceania",2027,93932
+"Rest of South Asia/Oceania",2028,122775
+"Rest of South Asia/Oceania",2029,160069
+"Rest of South Asia/Oceania",2030,213554
+"Rest of South Asia/Oceania",2031,262686
+"Rest of South Asia/Oceania",2032,332612
+"Rest of South Asia/Oceania",2033,437151
+"Rest of South Asia/Oceania",2034,531606
+"Rest of South Asia/Oceania",2035,655408
+"Rest of South Asia/Oceania",2036,752674
+"Rest of South Asia/Oceania",2037,856001
+"Rest of South Asia/Oceania",2038,967086
+"Rest of South Asia/Oceania",2039,1078360
+"Rest of South Asia/Oceania",2040,1207602
+"Rest of South Asia/Oceania",2041,1265082
+"Rest of South Asia/Oceania",2042,1324485
+"Rest of South Asia/Oceania",2043,1387060
+"Rest of South Asia/Oceania",2044,1450807
+"Rest of South Asia/Oceania",2045,1523247
+"Rest of South Asia/Oceania",2046,1579984
+"Rest of South Asia/Oceania",2047,1638325
+"Rest of South Asia/Oceania",2048,1698976
+"Rest of South Asia/Oceania",2049,1760194
+"Rest of South Asia/Oceania",2050,1826482
+"Romania",2015,72
+"Romania",2016,73
+"Romania",2017,235
+"Romania",2018,528
+"Romania",2019,1667
+"Romania",2020,2866
+"Romania",2021,6375
+"Romania",2022,11741
+"Romania",2023,15475
+"Romania",2024,65499
+"Romania",2025,108562
+"Romania",2026,145660
+"Romania",2027,201876
+"Romania",2028,257099
+"Romania",2029,307003
+"Romania",2030,364197
+"Romania",2031,394744
+"Romania",2032,424557
+"Romania",2033,457796
+"Romania",2034,491072
+"Romania",2035,529561
+"Romania",2036,564522
+"Romania",2037,608341
+"Romania",2038,653153
+"Romania",2039,705282
+"Romania",2040,778442
+"Romania",2041,798363
+"Romania",2042,818315
+"Romania",2043,838338
+"Romania",2044,858385
+"Romania",2045,878693
+"Romania",2046,898520
+"Romania",2047,918348
+"Romania",2048,938174
+"Romania",2049,958002
+"Romania",2050,977829
+"Russia",2015,112
+"Russia",2016,356
+"Russia",2017,111
+"Russia",2018,151
+"Russia",2019,363
+"Russia",2020,780
+"Russia",2021,1256
+"Russia",2022,762
+"Russia",2023,1915
+"Russia",2024,52051
+"Russia",2025,69028
+"Russia",2026,78953
+"Russia",2027,90255
+"Russia",2028,104956
+"Russia",2029,191386
+"Russia",2030,379404
+"Russia",2031,479471
+"Russia",2032,594312
+"Russia",2033,725003
+"Russia",2034,854812
+"Russia",2035,999480
+"Russia",2036,1140183
+"Russia",2037,1287488
+"Russia",2038,1441709
+"Russia",2039,1601772
+"Russia",2040,1769128
+"Russia",2041,1821609
+"Russia",2042,1874283
+"Russia",2043,1927150
+"Russia",2044,1980128
+"Russia",2045,2033459
+"Russia",2046,2082834
+"Russia",2047,2132208
+"Russia",2048,2181583
+"Russia",2049,2230956
+"Russia",2050,2280331
+"Saudi Arabia",2015,0
+"Saudi Arabia",2016,0
+"Saudi Arabia",2017,0
+"Saudi Arabia",2018,0
+"Saudi Arabia",2019,0
+"Saudi Arabia",2020,50
+"Saudi Arabia",2021,241
+"Saudi Arabia",2022,388
+"Saudi Arabia",2023,1532
+"Saudi Arabia",2024,33248
+"Saudi Arabia",2025,38715
+"Saudi Arabia",2026,44928
+"Saudi Arabia",2027,52163
+"Saudi Arabia",2028,60297
+"Saudi Arabia",2029,114106
+"Saudi Arabia",2030,258764
+"Saudi Arabia",2031,315785
+"Saudi Arabia",2032,374562
+"Saudi Arabia",2033,435095
+"Saudi Arabia",2034,497385
+"Saudi Arabia",2035,561430
+"Saudi Arabia",2036,646239
+"Saudi Arabia",2037,733389
+"Saudi Arabia",2038,822880
+"Saudi Arabia",2039,914713
+"Saudi Arabia",2040,1008888
+"Saudi Arabia",2041,1023522
+"Saudi Arabia",2042,1038156
+"Saudi Arabia",2043,1052790
+"Saudi Arabia",2044,1067425
+"Saudi Arabia",2045,1082059
+"Saudi Arabia",2046,1096693
+"Saudi Arabia",2047,1111327
+"Saudi Arabia",2048,1125961
+"Saudi Arabia",2049,1140596
+"Saudi Arabia",2050,1155230
+"Singapore",2015,0
+"Singapore",2016,2
+"Singapore",2017,535
+"Singapore",2018,511
+"Singapore",2019,1072
+"Singapore",2020,502
+"Singapore",2021,2546
+"Singapore",2022,3378
+"Singapore",2023,4660
+"Singapore",2024,10747
+"Singapore",2025,16153
+"Singapore",2026,21339
+"Singapore",2027,28453
+"Singapore",2028,37643
+"Singapore",2029,49910
+"Singapore",2030,65517
+"Singapore",2031,75579
+"Singapore",2032,83799
+"Singapore",2033,98348
+"Singapore",2034,108426
+"Singapore",2035,118994
+"Singapore",2036,130047
+"Singapore",2037,139788
+"Singapore",2038,149848
+"Singapore",2039,158122
+"Singapore",2040,166518
+"Singapore",2041,174809
+"Singapore",2042,183121
+"Singapore",2043,191732
+"Singapore",2044,199006
+"Singapore",2045,206278
+"Singapore",2046,213426
+"Singapore",2047,220575
+"Singapore",2048,227723
+"Singapore",2049,234871
+"Singapore",2050,242020
+"Slovakia",2015,15
+"Slovakia",2016,67
+"Slovakia",2017,226
+"Slovakia",2018,322
+"Slovakia",2019,171
+"Slovakia",2020,936
+"Slovakia",2021,1166
+"Slovakia",2022,1609
+"Slovakia",2023,2753
+"Slovakia",2024,24599
+"Slovakia",2025,45597
+"Slovakia",2026,60728
+"Slovakia",2027,80332
+"Slovakia",2028,100133
+"Slovakia",2029,119649
+"Slovakia",2030,140974
+"Slovakia",2031,148113
+"Slovakia",2032,154962
+"Slovakia",2033,161930
+"Slovakia",2034,169148
+"Slovakia",2035,177077
+"Slovakia",2036,184859
+"Slovakia",2037,193736
+"Slovakia",2038,203208
+"Slovakia",2039,213862
+"Slovakia",2040,227125
+"Slovakia",2041,232374
+"Slovakia",2042,237624
+"Slovakia",2043,242875
+"Slovakia",2044,248126
+"Slovakia",2045,253381
+"Slovakia",2046,258629
+"Slovakia",2047,263876
+"Slovakia",2048,269124
+"Slovakia",2049,274372
+"Slovakia",2050,279620
+"South Africa",2015,111
+"South Africa",2016,100
+"South Africa",2017,135
+"South Africa",2018,66
+"South Africa",2019,156
+"South Africa",2020,90
+"South Africa",2021,210
+"South Africa",2022,440
+"South Africa",2023,806
+"South Africa",2024,16207
+"South Africa",2025,19512
+"South Africa",2026,23401
+"South Africa",2027,27927
+"South Africa",2028,33775
+"South Africa",2029,70732
+"South Africa",2030,147886
+"South Africa",2031,185000
+"South Africa",2032,224626
+"South Africa",2033,266764
+"South Africa",2034,311415
+"South Africa",2035,358577
+"South Africa",2036,420623
+"South Africa",2037,486019
+"South Africa",2038,554764
+"South Africa",2039,626859
+"South Africa",2040,702303
+"South Africa",2041,723238
+"South Africa",2042,744173
+"South Africa",2043,765108
+"South Africa",2044,786043
+"South Africa",2045,806978
+"South Africa",2046,827913
+"South Africa",2047,848847
+"South Africa",2048,869782
+"South Africa",2049,890717
+"South Africa",2050,911652
+"South Korea",2015,2995
+"South Korea",2016,5771
+"South Korea",2017,13839
+"South Korea",2018,32084
+"South Korea",2019,32659
+"South Korea",2020,45501
+"South Korea",2021,96395
+"South Korea",2022,159243
+"South Korea",2023,157873
+"South Korea",2024,154099
+"South Korea",2025,210743
+"South Korea",2026,287981
+"South Korea",2027,393636
+"South Korea",2028,538125
+"South Korea",2029,735347
+"South Korea",2030,1004922
+"South Korea",2031,1012756
+"South Korea",2032,1057653
+"South Korea",2033,1131279
+"South Korea",2034,1156394
+"South Korea",2035,1198501
+"South Korea",2036,1217279
+"South Korea",2037,1235637
+"South Korea",2038,1253575
+"South Korea",2039,1271223
+"South Korea",2040,1288449
+"South Korea",2041,1278400
+"South Korea",2042,1268351
+"South Korea",2043,1258302
+"South Korea",2044,1248253
+"South Korea",2045,1238204
+"South Korea",2046,1228155
+"South Korea",2047,1218105
+"South Korea",2048,1208056
+"South Korea",2049,1198007
+"South Korea",2050,1187958
+"Spain",2015,2176
+"Spain",2016,3023
+"Spain",2017,5029
+"Spain",2018,7713
+"Spain",2019,11955
+"Spain",2020,19871
+"Spain",2021,27086
+"Spain",2022,35264
+"Spain",2023,60801
+"Spain",2024,261811
+"Spain",2025,495334
+"Spain",2026,663892
+"Spain",2027,841161
+"Spain",2028,1028307
+"Spain",2029,1224606
+"Spain",2030,1438086
+"Spain",2031,1482912
+"Spain",2032,1527955
+"Spain",2033,1573602
+"Spain",2034,1615303
+"Spain",2035,1657017
+"Spain",2036,1698763
+"Spain",2037,1740506
+"Spain",2038,1782336
+"Spain",2039,1823961
+"Spain",2040,1865585
+"Spain",2041,1907210
+"Spain",2042,1948835
+"Spain",2043,1990459
+"Spain",2044,2032082
+"Spain",2045,2073705
+"Spain",2046,2115328
+"Spain",2047,2156951
+"Spain",2048,2198573
+"Spain",2049,2240196
+"Spain",2050,2281819
+"Sweden",2015,3595
+"Sweden",2016,3572
+"Sweden",2017,4796
+"Sweden",2018,8130
+"Sweden",2019,16974
+"Sweden",2020,29845
+"Sweden",2021,60080
+"Sweden",2022,99555
+"Sweden",2023,119844
+"Sweden",2024,179650
+"Sweden",2025,238522
+"Sweden",2026,245996
+"Sweden",2027,254064
+"Sweden",2028,262434
+"Sweden",2029,270592
+"Sweden",2030,323776
+"Sweden",2031,327887
+"Sweden",2032,332044
+"Sweden",2033,336340
+"Sweden",2034,340205
+"Sweden",2035,344090
+"Sweden",2036,348040
+"Sweden",2037,351979
+"Sweden",2038,356098
+"Sweden",2039,359767
+"Sweden",2040,363437
+"Sweden",2041,367106
+"Sweden",2042,370775
+"Sweden",2043,374445
+"Sweden",2044,378114
+"Sweden",2045,381782
+"Sweden",2046,385452
+"Sweden",2047,389121
+"Sweden",2048,392789
+"Sweden",2049,396459
+"Sweden",2050,400128
+"Switzerland",2015,4120
+"Switzerland",2016,3626
+"Switzerland",2017,5156
+"Switzerland",2018,5690
+"Switzerland",2019,13618
+"Switzerland",2020,20010
+"Switzerland",2021,32968
+"Switzerland",2022,42413
+"Switzerland",2023,56853
+"Switzerland",2024,22709
+"Switzerland",2025,33083
+"Switzerland",2026,47691
+"Switzerland",2027,69699
+"Switzerland",2028,101991
+"Switzerland",2029,149549
+"Switzerland",2030,219931
+"Switzerland",2031,254601
+"Switzerland",2032,290174
+"Switzerland",2033,326674
+"Switzerland",2034,364613
+"Switzerland",2035,403640
+"Switzerland",2036,410460
+"Switzerland",2037,417721
+"Switzerland",2038,425076
+"Switzerland",2039,432532
+"Switzerland",2040,440103
+"Switzerland",2041,447744
+"Switzerland",2042,455385
+"Switzerland",2043,463169
+"Switzerland",2044,471299
+"Switzerland",2045,479715
+"Switzerland",2046,486505
+"Switzerland",2047,493294
+"Switzerland",2048,500083
+"Switzerland",2049,506873
+"Switzerland",2050,513662
+"Thailand",2015,34
+"Thailand",2016,56
+"Thailand",2017,82
+"Thailand",2018,210
+"Thailand",2019,919
+"Thailand",2020,1730
+"Thailand",2021,1990
+"Thailand",2022,9974
+"Thailand",2023,77109
+"Thailand",2024,97279
+"Thailand",2025,120833
+"Thailand",2026,148204
+"Thailand",2027,179937
+"Thailand",2028,216722
+"Thailand",2029,259053
+"Thailand",2030,307929
+"Thailand",2031,440890
+"Thailand",2032,590287
+"Thailand",2033,758981
+"Thailand",2034,1073255
+"Thailand",2035,1355172
+"Thailand",2036,1426670
+"Thailand",2037,1498168
+"Thailand",2038,1569665
+"Thailand",2039,1641163
+"Thailand",2040,1712660
+"Thailand",2041,1784158
+"Thailand",2042,1855656
+"Thailand",2043,1927153
+"Thailand",2044,1998651
+"Thailand",2045,2070148
+"Thailand",2046,2141646
+"Thailand",2047,2213143
+"Thailand",2048,2284641
+"Thailand",2049,2356139
+"Thailand",2050,2427636
+"Turkey",2015,140
+"Turkey",2016,57
+"Turkey",2017,77
+"Turkey",2018,192
+"Turkey",2019,229
+"Turkey",2020,891
+"Turkey",2021,2968
+"Turkey",2022,7196
+"Turkey",2023,68797
+"Turkey",2024,17135
+"Turkey",2025,20476
+"Turkey",2026,24442
+"Turkey",2027,29037
+"Turkey",2028,34402
+"Turkey",2029,61041
+"Turkey",2030,154833
+"Turkey",2031,197900
+"Turkey",2032,243530
+"Turkey",2033,291774
+"Turkey",2034,342691
+"Turkey",2035,396164
+"Turkey",2036,452314
+"Turkey",2037,511017
+"Turkey",2038,572401
+"Turkey",2039,636402
+"Turkey",2040,702951
+"Turkey",2041,721635
+"Turkey",2042,740319
+"Turkey",2043,759004
+"Turkey",2044,777688
+"Turkey",2045,796372
+"Turkey",2046,815056
+"Turkey",2047,833740
+"Turkey",2048,852424
+"Turkey",2049,871109
+"Turkey",2050,889793
+"United Arab Emirates",2015,32
+"United Arab Emirates",2016,6
+"United Arab Emirates",2017,432
+"United Arab Emirates",2018,216
+"United Arab Emirates",2019,169
+"United Arab Emirates",2020,1999
+"United Arab Emirates",2021,2830
+"United Arab Emirates",2022,6385
+"United Arab Emirates",2023,10334
+"United Arab Emirates",2024,10938
+"United Arab Emirates",2025,12688
+"United Arab Emirates",2026,14715
+"United Arab Emirates",2027,17035
+"United Arab Emirates",2028,26153
+"United Arab Emirates",2029,45553
+"United Arab Emirates",2030,79280
+"United Arab Emirates",2031,97665
+"United Arab Emirates",2032,116895
+"United Arab Emirates",2033,136967
+"United Arab Emirates",2034,157883
+"United Arab Emirates",2035,179642
+"United Arab Emirates",2036,208373
+"United Arab Emirates",2037,238228
+"United Arab Emirates",2038,269208
+"United Arab Emirates",2039,301312
+"United Arab Emirates",2040,334541
+"United Arab Emirates",2041,341568
+"United Arab Emirates",2042,348596
+"United Arab Emirates",2043,355624
+"United Arab Emirates",2044,362651
+"United Arab Emirates",2045,369679
+"United Arab Emirates",2046,376706
+"United Arab Emirates",2047,383734
+"United Arab Emirates",2048,390761
+"United Arab Emirates",2049,397789
+"United Arab Emirates",2050,404816
+"United Kingdom",2015,12417
+"United Kingdom",2016,12946
+"United Kingdom",2017,16936
+"United Kingdom",2018,18304
+"United Kingdom",2019,41191
+"United Kingdom",2020,112911
+"United Kingdom",2021,204193
+"United Kingdom",2022,283986
+"United Kingdom",2023,335273
+"United Kingdom",2024,502207
+"United Kingdom",2025,662895
+"United Kingdom",2026,949197
+"United Kingdom",2027,1112703
+"United Kingdom",2028,1463517
+"United Kingdom",2029,1837517
+"United Kingdom",2030,2223447
+"United Kingdom",2031,2270204
+"United Kingdom",2032,2317280
+"United Kingdom",2033,2366941
+"United Kingdom",2034,2414303
+"United Kingdom",2035,2461727
+"United Kingdom",2036,2509384
+"United Kingdom",2037,2557107
+"United Kingdom",2038,2605396
+"United Kingdom",2039,2651547
+"United Kingdom",2040,2697709
+"United Kingdom",2041,2743881
+"United Kingdom",2042,2790066
+"United Kingdom",2043,2836261
+"United Kingdom",2044,2882131
+"United Kingdom",2045,2928002
+"United Kingdom",2046,2973873
+"United Kingdom",2047,3019744
+"United Kingdom",2048,3065615
+"United Kingdom",2049,3111486
+"United Kingdom",2050,3157356
+"United States",2015,71701
+"United States",2016,84260
+"United States",2017,106700
+"United States",2018,236407
+"United States",2019,233890
+"United States",2020,256143
+"United States",2021,483744
+"United States",2022,790985
+"United States",2023,1158830
+"United States",2024,2035626
+"United States",2025,3448282
+"United States",2026,4256322
+"United States",2027,5101519
+"United States",2028,6290761
+"United States",2029,7700285
+"United States",2030,8972018
+"United States",2031,9804878
+"United States",2032,10704253
+"United States",2033,11835259
+"United States",2034,12960797
+"United States",2035,14857329
+"United States",2036,14984472
+"United States",2037,15092254
+"United States",2038,15222397
+"United States",2039,15334426
+"United States",2040,15471111
+"United States",2041,15524962
+"United States",2042,15584891
+"United States",2043,15628845
+"United States",2044,15680038
+"United States",2045,15811025
+"United States",2046,15928285
+"United States",2047,15996275
+"United States",2048,16037727
+"United States",2049,16131882
+"United States",2050,16275731
+"Uruguay",2015,0
+"Uruguay",2016,0
+"Uruguay",2017,55
+"Uruguay",2018,35
+"Uruguay",2019,37
+"Uruguay",2020,132
+"Uruguay",2021,683
+"Uruguay",2022,1393
+"Uruguay",2023,2080
+"Uruguay",2024,1128
+"Uruguay",2025,1306
+"Uruguay",2026,1510
+"Uruguay",2027,1748
+"Uruguay",2028,2620
+"Uruguay",2029,4625
+"Uruguay",2030,8156
+"Uruguay",2031,12252
+"Uruguay",2032,16533
+"Uruguay",2033,20999
+"Uruguay",2034,25650
+"Uruguay",2035,30485
+"Uruguay",2036,31145
+"Uruguay",2037,31805
+"Uruguay",2038,32465
+"Uruguay",2039,33125
+"Uruguay",2040,33784
+"Uruguay",2041,34444
+"Uruguay",2042,35104
+"Uruguay",2043,35764
+"Uruguay",2044,36424
+"Uruguay",2045,37084
+"Uruguay",2046,37743
+"Uruguay",2047,38403
+"Uruguay",2048,39063
+"Uruguay",2049,39723
+"Uruguay",2050,40383
+"Venezuela",2015,0
+"Venezuela",2016,0
+"Venezuela",2017,0
+"Venezuela",2018,0
+"Venezuela",2019,0
+"Venezuela",2020,0
+"Venezuela",2021,0
+"Venezuela",2022,0
+"Venezuela",2023,0
+"Venezuela",2024,8979
+"Venezuela",2025,12461
+"Venezuela",2026,16684
+"Venezuela",2027,21751
+"Venezuela",2028,36640
+"Venezuela",2029,69981
+"Venezuela",2030,132070
+"Venezuela",2031,173891
+"Venezuela",2032,220848
+"Venezuela",2033,272940
+"Venezuela",2034,330168
+"Venezuela",2035,392531
+"Venezuela",2036,473970
+"Venezuela",2037,562257
+"Venezuela",2038,657391
+"Venezuela",2039,759373
+"Venezuela",2040,868202
+"Venezuela",2041,910999
+"Venezuela",2042,953796
+"Venezuela",2043,996592
+"Venezuela",2044,1039389
+"Venezuela",2045,1082186
+"Venezuela",2046,1124983
+"Venezuela",2047,1167779
+"Venezuela",2048,1210576
+"Venezuela",2049,1253373
+"Venezuela",2050,1296170
+"Vietnam",2015,0
+"Vietnam",2016,0
+"Vietnam",2017,0
+"Vietnam",2018,3
+"Vietnam",2019,0
+"Vietnam",2020,0
+"Vietnam",2021,85
+"Vietnam",2022,7279
+"Vietnam",2023,31700
+"Vietnam",2024,45002
+"Vietnam",2025,47766
+"Vietnam",2026,52348
+"Vietnam",2027,61851
+"Vietnam",2028,73047
+"Vietnam",2029,86243
+"Vietnam",2030,101766
+"Vietnam",2031,124221
+"Vietnam",2032,147376
+"Vietnam",2033,171232
+"Vietnam",2034,195789
+"Vietnam",2035,221046
+"Vietnam",2036,254489
+"Vietnam",2037,288866
+"Vietnam",2038,324177
+"Vietnam",2039,360422
+"Vietnam",2040,397601
+"Vietnam",2041,403439
+"Vietnam",2042,409277
+"Vietnam",2043,415115
+"Vietnam",2044,420953
+"Vietnam",2045,426792
+"Vietnam",2046,432630
+"Vietnam",2047,438468
+"Vietnam",2048,444306
+"Vietnam",2049,450144
+"Vietnam",2050,455982
+"Western Europe non EU",2015,265
+"Western Europe non EU",2016,246
+"Western Europe non EU",2017,893
+"Western Europe non EU",2018,809
+"Western Europe non EU",2019,1192
+"Western Europe non EU",2020,2588
+"Western Europe non EU",2021,4363
+"Western Europe non EU",2022,7101
+"Western Europe non EU",2023,10544
+"Western Europe non EU",2024,9602
+"Western Europe non EU",2025,10774
+"Western Europe non EU",2026,12716
+"Western Europe non EU",2027,14777
+"Western Europe non EU",2028,17775
+"Western Europe non EU",2029,19448
+"Western Europe non EU",2030,21184
+"Western Europe non EU",2031,21225
+"Western Europe non EU",2032,21252
+"Western Europe non EU",2033,21279
+"Western Europe non EU",2034,21319
+"Western Europe non EU",2035,21362
+"Western Europe non EU",2036,21295
+"Western Europe non EU",2037,21229
+"Western Europe non EU",2038,21162
+"Western Europe non EU",2039,21095
+"Western Europe non EU",2040,21029
+"Western Europe non EU",2041,20962
+"Western Europe non EU",2042,20896
+"Western Europe non EU",2043,20829
+"Western Europe non EU",2044,20763
+"Western Europe non EU",2045,20696
+"Western Europe non EU",2046,20629
+"Western Europe non EU",2047,20563
+"Western Europe non EU",2048,20495
+"Western Europe non EU",2049,20428
+"Western Europe non EU",2050,20362
