@@ -224,8 +224,65 @@ ggplot(data_fig,aes(c,mtons))+
 ggsave("Figures/MineralBudget.png", 
        ggplot2::last_plot(),units="cm",dpi=1200,width=17.8,height=8.7*2)
 
+pdf("Figures/pdf/Fig3.pdf",width=17.8/2.54,height=8.7*2/2.54)
+ggplot2::last_plot()
+dev.off()
 # Only Lithium - uncomment
 # ggsave("Figures/MineralBudgetLi.png", 
 #        ggplot2::last_plot(),units="cm",dpi=600,width=8.7*2,height=8.7)
+
+## Graphical Abstract Figure -----------
+
+data_fig2 <- data_fig %>% 
+  filter(Mineral=="Lithium",category=="Reference") %>% 
+  filter(c=="World")
+
+data_fig2 %>% 
+  pivot_longer(c(mtons,reserve), names_to = "key", values_to = "value") %>% 
+  mutate(key=factor(key,levels=c("reserve","mtons"))) %>% 
+  ggplot(aes(key,value,fill=key))+
+  geom_col(width = 0.95,col="black",linewidth=0.1)+
+  scale_fill_manual(values = c("mtons" = "darkgrey", "reserve" = "#6a3d9a"))+
+  labs(x="",y="")+
+  coord_flip(expand = F)+
+  theme_minimal()+
+  theme(panel.grid = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text=element_blank(),
+        legend.position = "none")
+
+ggsave("Figures/Graphical/World_li.png",
+       units="cm",dpi=600,
+       height = 2,width = 2)
+
+# Same but for countries
+data_fig2 <- data_fig %>% 
+  filter(Mineral=="Lithium",category=="Reference") %>% 
+  filter(c %in% c("CHN","USA","JPN","AUS"))
+
+data_fig2 %>% 
+  pivot_longer(c(mtons,reserve), names_to = "key", values_to = "value") %>% 
+  mutate(key=if_else(key=="mtons",c,key)) %>% 
+  mutate(key=factor(key,levels=c("reserve","CHN","USA","JPN","AUS"))) %>%
+  ggplot(aes(c,value,fill=key))+
+  geom_col(width = 0.7,position = position_dodge(),col="black",linewidth=0.1)+
+  scale_fill_manual(values = c("CHN" = "#ff0000", 
+                               "USA"="#1f78b4",
+                               "JPN"="#fdb462",
+                               "AUS"="#cab2d6",
+                               "reserve" = "#6a3d9a"))+
+  labs(x="",y="")+
+  coord_flip(expand = F)+
+  theme_minimal()+
+  theme(panel.grid = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text=element_blank(),
+        legend.position = "none")
+
+ggsave("Figures/Graphical/Countries_li.png",
+       units="cm",dpi=600,
+       height = 2,width = 2)
+
+
 
 # EoF

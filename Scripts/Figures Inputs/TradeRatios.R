@@ -135,41 +135,51 @@ colors <- brewer_pal(palette = "RdYlGn", direction = -1)(length(levels(ratios$in
 colors[1] <- "transparent"
 
 ratios %>% 
-  mutate(border=if_else(value<0.01,"omit","include")) %>% 
+  mutate(border=if_else(value<0.05,"omit","include")) %>% 
   ggplot(aes(destination,origin,fill=interval))+
-  geom_tile(aes(col=border))+
+  geom_tile(aes(col=border),linewidth=0.005)+
   # boxes
-  geom_rect(xmin=box_x[1],xmax=box_x[2],ymin=box_y[9],ymax=box_y[10],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[2],xmax=box_x[3],ymin=box_y[8],ymax=box_y[9],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[3],xmax=box_x[4],ymin=box_y[7],ymax=box_y[8],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[4],xmax=box_x[5],ymin=box_y[6],ymax=box_y[7],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[5],xmax=box_x[6],ymin=box_y[5],ymax=box_y[6],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[6],xmax=box_x[7],ymin=box_y[4],ymax=box_y[5],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[7],xmax=box_x[8],ymin=box_y[3],ymax=box_y[4],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[8],xmax=box_x[9],ymin=box_y[2],ymax=box_y[3],linewidth=1,col="brown",fill="transparent")+
-  geom_rect(xmin=box_x[9],xmax=box_x[10],ymin=box_y[1],ymax=box_y[2],linewidth=1,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[1],xmax=box_x[2],ymin=box_y[9],ymax=box_y[10],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[2],xmax=box_x[3],ymin=box_y[8],ymax=box_y[9],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[3],xmax=box_x[4],ymin=box_y[7],ymax=box_y[8],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[4],xmax=box_x[5],ymin=box_y[6],ymax=box_y[7],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[5],xmax=box_x[6],ymin=box_y[5],ymax=box_y[6],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[6],xmax=box_x[7],ymin=box_y[4],ymax=box_y[5],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[7],xmax=box_x[8],ymin=box_y[3],ymax=box_y[4],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[8],xmax=box_x[9],ymin=box_y[2],ymax=box_y[3],linewidth=0.01,col="brown",fill="transparent")+
+  geom_rect(xmin=box_x[9],xmax=box_x[10],ymin=box_y[1],ymax=box_y[2],linewidth=0.01,col="brown",fill="transparent")+
   scale_color_manual(values = c("omit" = "white", "include" = "black"))+
   # geom_tile(data = filter(ratios,value>0.01),color="black")+
   scale_fill_manual(values=colors, breaks=levels(ratios$interval),
                     labels=function(x) format(x, big.mark = " ", scientific = FALSE)) +
-  geom_text(x=text_x[1],y=text_y[9],label="European Union",col="brown")+
-  geom_text(x=text_x[2],y=text_y[8],label="Other Europe",col="brown")+
-  geom_text(x=text_x[3],y=text_y[7],label="North America",col="brown")+
-  geom_text(x=text_x[4],y=text_y[6],label="South America",col="brown")+
-  geom_text(x=text_x[5],y=text_y[5],label="Oceania",col="brown")+
-  geom_text(x=text_x[6],y=text_y[4],label="Asia",col="brown")+
-  geom_text(x=text_x[7],y=text_y[3],label="China",col="brown")+
-  geom_text(x=text_x[8],y=text_y[2],label="Middle East",col="brown")+
-  geom_text(x=text_x[9],y=text_y[1],label="Africa",col="brown")+
-  labs(x="Country Target",y="Source",fill="% Origin",
-       caption=paste0(text_caption,". "))+
+  # geom_text(x=text_x[1],y=text_y[9],label="European Union",col="brown")+
+  # geom_text(x=text_x[2],y=text_y[8],label="Other Europe",col="brown")+
+  # geom_text(x=text_x[3],y=text_y[7],label="North America",col="brown")+
+  # geom_text(x=text_x[4],y=text_y[6],label="South America",col="brown")+
+  # geom_text(x=text_x[5],y=text_y[5],label="Oceania",col="brown")+
+  # geom_text(x=text_x[6],y=text_y[4],label="Asia",col="brown")+
+  # geom_text(x=text_x[7],y=text_y[3],label="China",col="brown")+
+  # geom_text(x=text_x[8],y=text_y[2],label="Middle East",col="brown")+
+  # geom_text(x=text_x[9],y=text_y[1],label="Africa",col="brown")+
+  # labs(x="Country Target",y="Source",fill="% Origin",
+  #      caption=paste0(text_caption,". "))+
+  labs(x="",y="")+
   guides(col="none")+
   # xlim(country_order)+ylim(rev(countries_prod))+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1,size=size_text),
-        axis.text.y = element_text(size=size_text))
+  theme(
+    # axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1,size=size_text),
+    # axis.text.y = element_text(size=size_text))
+        legend.position = "none",
+        axis.ticks = element_blank(),
+        axis.text=element_blank())
 
 ggsave("Figures/Inputs/MONET_ratios.png",
        units="cm",dpi=600,
        height = 12.4*2,width = 12.8*3)
+
+# graphical abstract
+ggsave("Figures/Graphical/MONET_ratios.svg",
+       units="cm",dpi=600,
+       height = 3/2,width = 4.5/2)
 
 # EoF

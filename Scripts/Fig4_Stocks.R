@@ -536,4 +536,10 @@ plot_grid(p_li,p_ni,p_co,p_gr,ncol=2)
 ggsave("Figures/MineralStock.png", 
        ggplot2::last_plot(),units="cm",dpi=600,width=17.8,height=8.7*1.5)
 
+
+pdf("Figures/pdf/fig4.pdf",width=17.8/2.54,height=8.7*1.5/2.54)
+ggplot2::last_plot()
+dev.off()
+
+
 # EoF

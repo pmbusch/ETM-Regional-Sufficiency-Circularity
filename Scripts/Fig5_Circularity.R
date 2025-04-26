@@ -195,7 +195,7 @@ data_fig2 <- data_fig2 %>% mutate(c=factor(c,levels=c_order))
 # loop by mineral
 for (i in unique(data_fig2$Mineral)){
   
-  # i <- "Lithium" # debug
+  i <- "Lithium" # debug
 
   # Filter by mineral
   data_Notrade_min <- data_Notrade %>% filter(Mineral==i)
@@ -259,12 +259,72 @@ for (i in unique(data_fig2$Mineral)){
   
   ggsave(paste0("Figures/CircularityPotential_",i,".png"), 
          ggplot2::last_plot(),units="cm",dpi=600,width=17.8,height=12)
+  
+  ggsave(paste0("Figures/pdf/fig5",i,".pdf"),width=17.8/2.54,height=12/2.54)
+  ggplot2::last_plot()
+  dev.off()
+  
+  
 }
 
 
+# Graphical abstract
 
+data_99 <- data_fig2 %>% 
+  filter(Mineral=="Lithium",category=="Reference") %>% 
+  filter(c=="World")
 
-# Heatmap -----
+# Barplot
+data_99
+ggplot(data_99,aes(c,cp,fill=c))+
+  geom_col(col="black",linewidth=0.1)+
+  scale_fill_manual(values = c("World" = "#cab2d6"))+
+  labs(x="",y="")+
+  coord_cartesian(expand = F)+
+  scale_y_continuous(labels=scales::percent,limits = c(0,1))+
+  theme(panel.grid = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text=element_blank(),
+        legend.position = "none")
+
+ggsave("Figures/Graphical/World_circularity.png",
+       units="cm",dpi=600,
+       height = 5,width = 2)
+
+# for selected countries
+sel <- c("CHN","USA","JPN","MEX","DEU")
+data_99 <- data_fig2 %>% 
+  filter(Mineral=="Lithium",category=="Reference") %>% 
+  filter(c %in% sel)
+
+# Barplot
+data_99
+for (s in sel){
+  data_99 %>% 
+    filter(c==s) %>% 
+    ggplot(aes(c,cp,fill=c))+
+    geom_col(col="black",linewidth=0.1)+
+    scale_fill_manual(values = c("CHN" = "#ff0000", 
+                                   "USA"="#1f78b4",
+                                   "JPN"="#fdb462",
+                                   "MEX"="#b2df8a",
+                                   "DEU"="#a6cee3"))+
+    labs(x="",y="")+
+    coord_cartesian(expand = F)+
+    scale_y_continuous(labels=scales::percent,limits = c(0,1))+
+    theme(panel.grid = element_blank(),
+          axis.ticks = element_blank(),
+          axis.text=element_blank(),
+          legend.position = "none")
+  
+  ggsave(paste0("Figures/Graphical/",s,"_circularity.png"),
+         units="cm",dpi=600,
+         height = 2.5,width = 1)
+}
+
+  
+  
+  # Heatmap -----
 head(data_fig)
 # data_fig <- data_fig %>% mutate(name=substr(name,0,6))
 # data_fig <- data_fig %>% filter(Mineral=="Lithium")

@@ -167,7 +167,7 @@ p2 <- ggplot(data_fig_a,aes(Year,twh))+
             size=9*5/14 * 0.8,hjust = 0)+
   geom_text(data=filter(data_fig_a,Year==2050,name!="Reference"),
             aes(label=name),nudge_x = 0.4,nudge_y = c(-0.2,0,0,0.2,0,0),
-            size=8*5/14 * 0.8,hjust = 0)+
+            size=7*5/14 * 0.8,hjust = 0)+
   labs(x="",y="TWh",title = "Primary LIB requirements [TWh]",fill="",col="",tag="(b)")+
   scale_fill_manual(values= c("EV Production" = "#FFE5B4", "LIB Replacement" = "#004D40"))+
   scale_color_manual(values=col_scens)+
@@ -178,6 +178,25 @@ p2 <- ggplot(data_fig_a,aes(Year,twh))+
         plot.tag = element_text(face = "bold"),
         legend.position = "none")
 p2
+
+# graphical abstract
+data_fig_99 <- df %>% 
+  filter(NoTrade==F,circular==F) %>%
+  filter(category=="Reference") %>% 
+  group_by(Year,Region_EV) %>% reframe(twh=sum(twh))
+
+
+ggplot(data_fig_99,aes(Year,twh,fill=Region_EV))+
+  geom_area()+
+  scale_fill_manual(values=region_colors)+
+  labs(x="",y="",title="",tag="")+
+  coord_cartesian(expand=F,xlim = c(2024,2050))+
+  theme(legend.position = "none",
+    axis.ticks = element_blank(),axis.text=element_blank())
+
+ggsave("Figures/Graphical/LIBdemand.png",
+       units="cm",dpi=600,
+       height = 4,width = 6)
 
 
 # Fig c - reference detail -----
@@ -205,7 +224,7 @@ p3 <- ggplot(data_fig_b,aes(Sector,twh))+
   geom_col(col="black",aes(fill=Region_EV),linewidth=0.1)+
   geom_text(data=totals,aes(label=label_total),nudge_y = 5,size=9*5/14 * 0.8)+
   geom_text(aes(label = label_reg,group=Region_EV,col=white_font), position = position_stack(vjust = 0.5),
-            angle=0,size=8*5/14 * 0.8) +
+            angle=0,size=7.5*5/14 * 0.8) +
   coord_cartesian(expand = F,ylim = c(0,167))+
   scale_fill_manual(values=region_colors)+
   scale_color_manual(values=c( "whit"="#FFFFFF","blac"="#000000"))+
@@ -227,6 +246,13 @@ plot_grid(pg,
 
 ggsave("Figures/Fig2.png", 
        ggplot2::last_plot(),units="cm",dpi=600,width=17.8,height=8.7*2)
+
+
+pdf("Figures/pdf/Fig2.pdf",width=17.8/2.54,height=8.7*2/2.54)
+ggplot2::last_plot()
+dev.off()
+
+
 
 
 # EoF
