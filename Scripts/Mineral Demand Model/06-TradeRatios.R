@@ -63,6 +63,30 @@ if(circular){ # 100% recycling assumption
 }
 
 
+
+## Regional Higher Domestic Supply -----
+
+sales_ratio <- read.csv("Inputs/Trade Ratios/salesShare_RegionalHigherDS.csv")
+names_aux <- sales_ratio$X
+sales_ratio$X <- NULL
+sales_ratio <- as.matrix(sales_ratio)
+rownames(sales_ratio) <- colnames(sales_ratio) <- names_aux
+# same order of countries
+sales_ratio <- sales_ratio[countries,countries]
+colSums(sales_ratio)
+
+# 2-3 minutes each run
+df <- f.MineralDemand(icct,mineral_perLIB,mat_recovery_recycling)
+nrow(df)/1e6
+write.csv(df,"Results/Mineral Demand/MONET_RegionalHighDS.csv",row.names = F)
+
+
+if(circular){ # 100% recycling assumption
+  df <- f.MineralDemand(icct,mineral_perLIB,circular_recycling)
+  write.csv(df,"Results/Mineral Demand/Circular/MONET_RegionalHighDS.csv",row.names = F)
+}
+
+
 # USED Vehicle Trade Ratios scenarios -----
 
 tradeVeh # 2-Hand trade ratios
