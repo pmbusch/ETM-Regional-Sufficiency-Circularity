@@ -51,7 +51,7 @@ df %>%
   scale_fill_viridis_d(option = "turbo")+
   coord_cartesian(expand = F)+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   labs(x="",y="LIB \n Market \n Share",fill="Chemistry",
        caption="Source: Benchmark Mineral Intelligence")
 
@@ -124,7 +124,7 @@ ggplot(df_fig,aes(year,share,fill=chemistry))+
   scale_fill_viridis_d(option = "turbo")+
   scale_alpha_manual(values=c(1,0.7))+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="",title="LIB Market Share",fill="Chemistry",
        caption = "Source: Benchmark Mineral Intelligence. \n 2040-2050 projection based on 2035-2040 avg. growth")
@@ -172,7 +172,7 @@ evVol %>%
   coord_cartesian(expand = F)+
   scale_fill_viridis_d(option = "turbo")+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="EV \n Market \n Share",fill="Chemistry")
 
@@ -207,7 +207,7 @@ evVol_region %>%
   facet_wrap(~c)+
   scale_fill_viridis_d(option = "turbo")+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="",title="EV Market Share",fill="Chemistry")+
   theme(panel.spacing.x = unit(0.75, "cm"))
@@ -251,7 +251,7 @@ evVol_LFP %>%
   coord_cartesian(expand = F)+
   scale_fill_viridis_d(option = "turbo")+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="",title="EV Market Share",fill="Chemistry")
 
@@ -293,7 +293,7 @@ evVol_NMC %>%
   facet_wrap(~c)+
   scale_fill_viridis_d(option = "turbo")+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="",title="EV Market Share",fill="Chemistry")
 
@@ -338,7 +338,7 @@ evVol_NMC %>%
   facet_wrap(~c)+
   scale_fill_viridis_d(option = "turbo")+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="",title="EV Market Share",fill="Chemistry")
 
@@ -382,7 +382,7 @@ evVol_NMC %>%
   facet_wrap(~c)+
   scale_fill_viridis_d(option = "turbo")+
   scale_y_continuous(labels = scales::percent_format(scale = 100)) +
-  scale_x_continuous(breaks = c(2022, 2030, 2040, 2050))+
+  scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   guides(alpha=F)+
   labs(x="",y="",title="EV Market Share",fill="Chemistry")
 

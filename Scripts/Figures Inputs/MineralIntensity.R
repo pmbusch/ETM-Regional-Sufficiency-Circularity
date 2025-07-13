@@ -41,7 +41,9 @@ mineral %>%
   geom_vline(xintercept = seq(0.5,nrow(mineral)+0.5,1),col="lightgray",
              linetype="dashed",linewidth=0.2)+
   guides(fill = guide_legend(reverse=TRUE))+
+  theme_bw(16)+
   theme(
+    panel.grid = element_blank(),
     # legend.position = c(0.9,0.8),
     # strip.background = element_rect(margin = margin(0, 0, 0.1, 0)),
     strip.text = element_text(angle=0,size=10,margin = margin()))

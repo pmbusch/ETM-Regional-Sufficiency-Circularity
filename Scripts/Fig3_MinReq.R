@@ -141,10 +141,10 @@ usgs_country <- usgs_country %>%
 pos_rel <- 7
 ann_text <- data.frame(Mineral = factor("Lithium",levels=min_interest),
                        region_agg=factor("Region",levels=c("W","Region","Country")),
-                       mtons=rep(5.2,4),
-                       x=pos_rel+c(0.9,0.3,-0.3,-0.9),
+                       mtons=rep(5.2,5),
+                       x=pos_rel+c(0.9,0.3,-0.3,-0.9,-1.5),
                        label=c("LIB Capacity","LIB Chemistry",
-                               "LIB & EV Lifetime","Recycling"))
+                               "LIB & EV Lifetime","Recycling","New Veh Trade"))
 ann_rese <- data.frame(Mineral = factor("Lithium",levels=min_interest),
                        region_agg=factor("Region",levels=c("W","Region","Country")),
                        mtons=7.5,x=pos_rel-6,label="Reserves")
@@ -188,9 +188,12 @@ ggplot(data_fig,aes(c,mtons))+
                linewidth = 0.5,position = position_nudge(x=0.2))+
   geom_segment(data=filter(data_fig,category=="LIB & EV Lifetime"),
                aes(y = minTons,yend=maxTons),col="darkorange",
-               linewidth = 0.5,position = position_nudge(x=-0.2))+
+               linewidth = 0.5,position = position_nudge(x=0))+
   geom_segment(data=filter(data_fig,category=="Recycling"),
                aes(y = minTons,yend=maxTons),col="#4CAF50",
+               linewidth = 0.5,position = position_nudge(x=-0.2))+
+  geom_segment(data=filter(data_fig,str_detect(category,"New Vehicle Trade")),
+               aes(y = minTons,yend=maxTons),col="#008080",
                linewidth = 0.5,position = position_nudge(x=-0.4))+
   geom_text(data = ann_text,aes(label = label,col=label,x=x),angle=0,
             size=9*5/14 * 0.8,hjust=0)+
@@ -199,7 +202,7 @@ ggplot(data_fig,aes(c,mtons))+
   geom_point(data=usgs_country,size=0.5)+
   scale_color_manual(values=c("LIB Capacity"="darkred","LIB Chemistry"="darkblue",
                               "LIB & EV Lifetime"="darkorange","Recycling"="#4CAF50",
-                              "Reserves"="black"))+
+                              "New Veh Trade"="#008080","Reserves"="black"))+
   scale_fill_manual(values=c("Sufficient"="#505050","Insufficient"="#888888",
                              "No Reserves"="#B0B0B0"))+
   scale_y_continuous(expand = expansion(mult = c(0, 0.05)))+
