@@ -210,10 +210,21 @@ data_sector <- data_fig_c %>%
   group_by(Mineral,Year) %>%
   mutate(cumTons=cumsum(cumTons)) %>% ungroup()
 
+# RoW at End
+regs <-  unique(data_fig_c$categ) %>% sort()
+regs <- c(regs[1:3],regs[5],regs[4],
+          regs[6:8],regs[10],regs[9],
+          regs[11:20],regs[22],regs[21])
+data_fig_c <- data_fig_c %>% 
+  mutate(categ=factor(categ,levels=regs))
+
 
 data_fig_c_all <- data_fig_c
 data_sector_all <- data_sector
 hhi_all <- hhi
+
+
+
 ## Lithium plot ----- 
 
 data_fig_c <- data_fig_c_all %>% filter(Mineral=="Lithium")
@@ -228,36 +239,42 @@ label_fig <- data_fig_c %>%
 label_fig2 <- data_fig_c %>% 
   filter(Year==2046) %>% 
   mutate(lab=if_else(Sector=="EV" & Region_Agg %in% c("EU","South Asia"),Region_Agg,""),
-         angle=if_else(Region_Agg=="South Asia",-35,0))
+         angle=case_when(Region_Agg=="South Asia"~-25,
+                         Region_Agg=="EU"~-15,
+                         T ~ 0))
 label_fig <- rbind(label_fig,label_fig2)
 
 # Figure - Mineral Stocks
+library(ggpattern)
 p1 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
-  geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
-  geom_line(data=data_sector,aes(group=Sector),linewidth=1)+
+  # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
+  geom_area_pattern(aes(fill=categ,pattern = Sector),
+                    pattern_alpha=0.4,pattern_size=0.1,
+                    col="black",linewidth=0.1)+
+  geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
             position = position_stack(vjust = 0.5),hjust=0,
             fontface = "italic")+
-  annotate("text", x = 2031, y = 26.5, fontface="bold",angle=-25,
+  annotate("text", x = 2031, y = 26.5, fontface="bold",angle=-20,
            size=8*5/14 * 0.8,label = "Reserves") +  
   annotate("text", x = 2036, y = 29, fontface="bold",angle=-5,
            size=8*5/14 * 0.8,label = "EV Stock") +  
-  annotate("text", x = 2046, y = 29, fontface="bold",
+  annotate("text", x = 2046.5, y = 29, fontface="bold",
            size=8*5/14 * 0.8,label = "EoL LIB Stock") + 
-  geom_hline(yintercept = remaining_reserves[3],linetype="dashed",linewidth=0.5)+
+  # geom_hline(yintercept = remaining_reserves[3],linetype="dashed",linewidth=0.5)+
   scale_fill_manual(values=new_colors)+
   scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   # add HHI as axis titles
   scale_y_continuous(sec.axis = dup_axis(name = paste0("HHI: ",round(hhi[2,2],2))),
                      name=paste0("HHI: ",round(hhi[1,2],2)))+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
   coord_cartesian(expand=F)+
-  labs(x="",title="Lithium Stock [million tons]",tag="(a)")+
+  labs(x="",title="\u00A0\u00A0\u00A0Lithium Stock [million tons]",tag="(a)")+
   theme_bw(8)+
   theme(panel.grid=element_blank(),
         plot.tag = element_text(face = "bold"),
         plot.tag.position = c(0.03, 1),
-        axis.title.y = element_text(margin=margin(0,0,-20,0)),
+        axis.title.y = element_text(margin=margin(0,-5,-20,0)),
         axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-5)),
         legend.position = "none")
 p1
@@ -268,10 +285,20 @@ data_bar <- data_fig_c %>% filter(Year==2050) %>%
   mutate(Sector=factor(Sector,levels = rev(c("Reserve","EV","EoL LIB"))),
          x=" ")
 p1_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
-  geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  # geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  geom_col_pattern(fill="darkgrey",col="black",linewidth=0.1,
+                   aes(pattern = Sector),
+                   pattern_alpha=0.7,pattern_size=0.5,
+                   pattern_fill="white",pattern_colour="white",
+                   pattern_spacing=0.4)+
   geom_text(aes(label = Sector),size=8*5/14 * 0.8,angle=90,
+            # col="white",
             position = position_stack(vjust = 0.5),hjust=0.6)+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.7,"EoL LIB"=0.4)) +
+  geom_segment(y= data_bar$cumTons[3],yend= data_bar$cumTons[3],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  geom_segment(y= data_bar$cumTons[3]+data_bar$cumTons[1],yend= data_bar$cumTons[3]+data_bar$cumTons[1],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.7,"EoL LIB"=0.4)) +
   theme_bw(8)+labs(x="",y="",title=" ")+
   theme(legend.position = "none",
         axis.title = element_blank(), 
@@ -279,9 +306,10 @@ p1_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         axis.text.y = element_blank(), 
         axis.ticks = element_blank(),
         panel.border = element_blank())
+p1_bar
 
 library(cowplot)
-p1_bar <- p1_bar+theme(plot.margin = margin(-7,0,3,-5)) #trbl
+p1_bar <- p1_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
 p_li <- plot_grid(p1,p1_bar,nrow=1,rel_widths = c(0.93,0.07)) 
 p_li
 
@@ -294,43 +322,50 @@ hhi <- hhi_all %>% filter(Mineral=="Nickel") %>% mutate(Mineral=NULL)
 # Add main country labels
 label_fig <- data_fig_c %>% 
   filter(Year==2025) %>% 
-  mutate(lab=if_else(cumTons>1&Sector=="Reserve",Region_Agg,""),
+  mutate(lab=if_else(cumTons>1&Sector=="Reserve"&Region_Agg!="North America",
+                     Region_Agg,""),
          angle=0)
 label_fig2 <- data_fig_c %>% 
-  filter(Year==2046) %>% 
-  mutate(lab=if_else(Sector=="EV" & Region_Agg %in% c("EU"),Region_Agg,""),
-         angle=0)
+  filter(Year==2045) %>% 
+  mutate(lab=if_else(Sector=="EV" & Region_Agg %in% c("EU","North America"),
+                     Region_Agg,""),
+         angle=case_when(Region_Agg=="North America"~-25,
+                         Region_Agg=="EU"~-15,
+                         T ~ 0))
 label_fig <- rbind(label_fig,label_fig2)
 
 # Figure - Mineral Stocks
 p2 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
-  geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
-  geom_line(data=data_sector,aes(group=Sector),linewidth=1)+
+  # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
+  geom_area_pattern(aes(fill=categ,pattern = Sector),
+                    pattern_alpha=0.4,pattern_size=0.1,
+                    col="black",linewidth=0.1)+
+  geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
             position = position_stack(vjust = 0.45),hjust=0,
             fontface = "italic")+
-  annotate("text", x = 2031, y = 115, fontface="bold",angle=-25,
+  annotate("text", x = 2031, y = 115, fontface="bold",angle=-20,
            size=8*5/14 * 0.8,label = "Reserves") +  
   annotate("text", x = 2036, y = 126, fontface="bold",angle=-5,
            size=8*5/14 * 0.8,label = "EV Stock") +  
-  annotate("text", x = 2046, y = 126.5, fontface="bold",
+  annotate("text", x = 2046.5, y = 126.5, fontface="bold",
            size=8*5/14 * 0.8,label = "EoL LIB Stock") + 
-  geom_hline(yintercept = remaining_reserves[4],linetype="dashed",linewidth=0.5)+
+  # geom_hline(yintercept = remaining_reserves[4],linetype="dashed",linewidth=0.5)+
   scale_fill_manual(values=new_colors)+
   scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   # add HHI as axis titles
-  scale_y_continuous(sec.axis = dup_axis(name = paste0("HHI: ",round(hhi[2,2],2))),
+  scale_y_continuous(sec.axis = dup_axis(name = paste0("\u00A0\u00A0\u00A0HHI: ",round(hhi[2,2],2))),
                      breaks = c(0,50,100),
-                     name=paste0("HHI: ",round(hhi[1,2],2)))+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
+                     name=paste0("\u00A0\u00A0\u00A0HHI: ",round(hhi[1,2],2)))+
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
   coord_cartesian(expand=F)+
-  labs(x="",title="Nickel Stock [million tons]",tag="(b)")+
+  labs(x="",title="\u00A0\u00A0\u00A0Nickel Stock [million tons]",tag="(b)")+
   theme_bw(8)+
   theme(panel.grid=element_blank(),
         plot.tag = element_text(face = "bold"),
         plot.tag.position = c(0.03, 1),
-        axis.title.y = element_text(margin=margin(0,0,-20,0)),
-        axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-5)),
+        axis.title.y = element_text(margin=margin(0,-10,-20,0)),
+        axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-8)),
         legend.position = "none")
 p2
 
@@ -340,10 +375,19 @@ data_bar <- data_fig_c %>% filter(Year==2050) %>%
   mutate(Sector=factor(Sector,levels = rev(c("Reserve","EV","EoL LIB"))),
          x=" ")
 p2_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
-  geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  # geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  geom_col_pattern(fill="darkgrey",col="black",linewidth=0.1,
+                   aes(pattern = Sector),
+                   pattern_alpha=0.7,pattern_size=0.5,
+                   pattern_fill="white",pattern_colour="white",
+                   pattern_spacing=0.4)+
   geom_text(aes(label = Sector),size=8*5/14 * 0.8,angle=90,
             position = position_stack(vjust = 0.5),hjust=0.6)+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.7,"EoL LIB"=0.4)) +
+  geom_segment(y= data_bar$cumTons[3],yend= data_bar$cumTons[3],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  geom_segment(y= data_bar$cumTons[3]+data_bar$cumTons[1],yend= data_bar$cumTons[3]+data_bar$cumTons[1],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.7,"EoL LIB"=0.4)) +
   theme_bw(8)+labs(x="",y="",title=" ")+
   theme(legend.position = "none",
         axis.title = element_blank(), 
@@ -352,7 +396,7 @@ p2_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         axis.ticks = element_blank(),
         panel.border = element_blank())
 
-p2_bar <- p2_bar+theme(plot.margin = margin(-7,0,3,-5)) #trbl
+p2_bar <- p2_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
 p_ni <- plot_grid(p2,p2_bar,nrow=1,rel_widths = c(0.93,0.07)) 
 p_ni
 
@@ -395,15 +439,22 @@ label_fig <- data_fig_c %>%
   mutate(lab=if_else(cumTons>0.5&Sector=="Reserve",Region_Agg,""),
          angle=0)
 label_fig2 <- data_fig_c %>% 
-  filter(Year==2046) %>% 
-  mutate(lab=if_else(Sector=="EV" & Region_Agg %in% c("North America","EU"),Region_Agg,""),
-         angle=if_else(Region_Agg=="North America",-40,0))
+  filter(Year==2045) %>% 
+  mutate(lab=if_else(Sector=="EV" & Region_Agg %in% c("North America","EU","China"),
+                     Region_Agg,""),
+         angle=case_when(Region_Agg=="North America"~-35,
+                         Region_Agg=="EU"~-20,
+                         Region_Agg=="China"~-30,
+                         T ~ 0))
 label_fig <- rbind(label_fig,label_fig2)
 
 # Figure - Mineral Stocks
 p3 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
-  geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
-  geom_line(data=data_sector,aes(group=Sector),linewidth=1)+
+  # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
+  geom_area_pattern(aes(fill=categ,pattern = Sector),
+                    pattern_alpha=0.4,pattern_size=0.1,
+                    col="black",linewidth=0.1)+
+  geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
             position = position_stack(vjust = 0.5),hjust=0,
             fontface = "italic")+
@@ -415,22 +466,22 @@ p3 <- ggplot(data_fig_c,aes(Year,cumTons))+
            size=8*5/14 * 0.8,label = "EoL LIB Stock") + 
   # annotate("text", x = 2047, y = -0.3, fontface="bold",
   #          size=8*5/14 * 0.8,label = "Deficit") + 
-  geom_hline(yintercept = remaining_reserves[1],linetype="dashed",linewidth=0.5)+
+  # geom_hline(yintercept = remaining_reserves[1],linetype="dashed",linewidth=0.5)+
   scale_fill_manual(values=new_colors)+
   scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   # add HHI as axis titles
-  scale_y_continuous(sec.axis = dup_axis(name = paste0("HHI: ",round(hhi[2,2],2))),
-                     breaks=c(0,3.5,7,10.5),
-                     name=paste0("HHI: ",round(hhi[1,2],2)))+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
+  scale_y_continuous(sec.axis = dup_axis(name = paste0("\u00A0\u00A0\u00A0HHI: ",round(hhi[2,2],2))),
+                     breaks=c(0,4,8),
+                     name=paste0("\u00A0\u00A0\u00A0HHI: ",round(hhi[1,2],2)))+
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
   coord_cartesian(expand=F)+
-  labs(x="",title="Cobalt Stock [million tons]",tag="(c)")+
+  labs(x="",title="\u00A0\u00A0\u00A0Cobalt Stock [million tons]",tag="(c)")+
   theme_bw(8)+
   theme(panel.grid=element_blank(),
         plot.tag = element_text(face = "bold"),
         plot.tag.position = c(0.03, 1),
-        axis.title.y = element_text(margin=margin(0,0,-20,0)),
-        axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-5)),
+        axis.title.y = element_text(margin=margin(0,-4,-20,0)),
+        axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-4)),
         legend.position = "none")
 p3
 
@@ -441,10 +492,19 @@ data_bar <- data_fig_c %>% filter(Year==2050) %>%
   mutate(Sector=factor(Sector,levels = rev(c(" ","EV","EoL LIB"))),
          x=" ")
 p3_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
-  geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  # geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  geom_col_pattern(fill="darkgrey",col="black",linewidth=0.1,
+                   aes(pattern = Sector),
+                   pattern_alpha=0.7,pattern_size=0.5,
+                   pattern_fill="white",pattern_colour="white",
+                   pattern_spacing=0.4)+
   geom_text(aes(label = Sector),size=8*5/14 * 0.8,angle=90,
             position = position_stack(vjust = 0.5),hjust=0.8)+
-  scale_alpha_manual(values = c(" "=1,"EV"=0.7,"EoL LIB"=0.4)) +
+  geom_segment(y= data_bar$cumTons[3],yend= data_bar$cumTons[3],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  geom_segment(y= data_bar$cumTons[3]+data_bar$cumTons[1],yend= data_bar$cumTons[3]+data_bar$cumTons[1],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  # scale_alpha_manual(values = c(" "=1,"EV"=0.7,"EoL LIB"=0.4)) +
   theme_bw(8)+labs(x="",y="",title=" ")+
   theme(legend.position = "none",
         axis.title = element_blank(), 
@@ -453,10 +513,9 @@ p3_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         axis.ticks = element_blank(),
         panel.border = element_blank())
 
-p3_bar <- p3_bar+theme(plot.margin = margin(-7,0,3,-5)) #trbl
+p3_bar <- p3_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
 p_co <- plot_grid(p3,p3_bar,nrow=1,rel_widths = c(0.93,0.07)) 
 p_co
-
 
 
 ## Graphite ------
@@ -467,42 +526,48 @@ hhi <- hhi_all %>% filter(Mineral=="Graphite") %>% mutate(Mineral=NULL)
 # Add main country labels
 label_fig <- data_fig_c %>% 
   filter(Year==2025) %>% 
-  mutate(lab=if_else(cumTons>1&Sector=="Reserve",Region_Agg,""),
+  mutate(lab=if_else(cumTons>1&Sector=="Reserve"&Region_Agg!="North America",
+                     Region_Agg,""),
          angle=0)
 label_fig2 <- data_fig_c %>% 
   filter(Year==2045) %>% 
   mutate(lab=if_else(Sector=="EV" & Region_Agg %in% c("EU","North America"),Region_Agg,""),
-         angle=if_else(Region_Agg=="North America",-30,0))
+         angle=case_when(Region_Agg=="North America"~-25,
+                         Region_Agg=="EU"~-15,
+                         T ~ 0))
 label_fig <- rbind(label_fig,label_fig2)
 
 # Figure - Mineral Stocks
 p4 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
-  geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
-  geom_line(data=data_sector,aes(group=Sector),linewidth=1)+
+  # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
+  geom_area_pattern(aes(fill=categ,pattern = Sector),
+                    pattern_alpha=0.4,pattern_size=0.1,
+                    col="black",linewidth=0.1)+
+  geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
             position = position_stack(vjust = 0.5),hjust=0,
             fontface = "italic")+
-  annotate("text", x = 2031, y = 245, fontface="bold",angle=-25,
+  annotate("text", x = 2031, y = 245, fontface="bold",angle=-20,
            size=8*5/14 * 0.8,label = "Reserves") +  
   annotate("text", x = 2036, y = 265, fontface="bold",angle=-5,
            size=8*5/14 * 0.8,label = "EV Stock") +  
   annotate("text", x = 2046, y = 270, fontface="bold",
            size=8*5/14 * 0.8,label = "EoL LIB Stock") + 
-  geom_hline(yintercept = remaining_reserves[2],linetype="dashed",linewidth=0.5)+
+  # geom_hline(yintercept = remaining_reserves[2],linetype="dashed",linewidth=0.5)+
   scale_fill_manual(values=new_colors)+
   scale_x_continuous(breaks = c(2024, 2030, 2040, 2050))+
   # add HHI as axis titles
   scale_y_continuous(sec.axis = dup_axis(name = paste0("HHI: ",round(hhi[2,2],2))),
                      name=paste0("HHI: ",round(hhi[1,2],2)))+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
   coord_cartesian(expand=F)+
-  labs(x="",title="Natural Graphite Stock [million tons]",tag="(d)")+
+  labs(x="",title="\u00A0\u00A0\u00A0Natural Graphite Stock [million tons]",tag="(d)")+
   theme_bw(8)+
   theme(panel.grid=element_blank(),
         plot.tag = element_text(face = "bold"),
         plot.tag.position = c(0.03, 1),
-        axis.title.y = element_text(margin=margin(0,0,-20,0)),
-        axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-5)),
+        axis.title.y = element_text(margin=margin(0,-10,-20,0)),
+        axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-7)),
         legend.position = "none")
 p4
 
@@ -512,10 +577,19 @@ data_bar <- data_fig_c %>% filter(Year==2050) %>%
   mutate(Sector=factor(Sector,levels = rev(c("Reserve","EV","EoL LIB"))),
          x=" ")
 p4_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
-  geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  # geom_col(fill="darkgrey",col="black",linewidth=0.1,aes(alpha=Sector))+
+  geom_col_pattern(fill="darkgrey",col="black",linewidth=0.1,
+                   aes(pattern = Sector),
+                   pattern_alpha=0.7,pattern_size=0.5,
+                   pattern_fill="white",pattern_colour="white",
+                   pattern_spacing=0.4)+
   geom_text(aes(label = Sector),size=8*5/14 * 0.8,angle=90,
             position = position_stack(vjust = 0.5),hjust=0.6)+
-  scale_alpha_manual(values = c("Reserve"=1,"EV"=0.7,"EoL LIB"=0.4)) +
+  geom_segment(y= data_bar$cumTons[3],yend= data_bar$cumTons[3],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  geom_segment(y= data_bar$cumTons[3]+data_bar$cumTons[1],yend= data_bar$cumTons[3]+data_bar$cumTons[1],
+               x=0.55,xend=1.45,col="black",linewidth=0.7)+
+  # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.7,"EoL LIB"=0.4)) +
   theme_bw(8)+labs(x="",y="",title=" ")+
   theme(legend.position = "none",
         axis.title = element_blank(), 
@@ -524,7 +598,7 @@ p4_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         axis.ticks = element_blank(),
         panel.border = element_blank())
 
-p4_bar <- p4_bar+theme(plot.margin = margin(-7,0,3,-5)) #trbl
+p4_bar <- p4_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
 p_gr <- plot_grid(p4,p4_bar,nrow=1,rel_widths = c(0.93,0.07)) 
 p_gr
 
