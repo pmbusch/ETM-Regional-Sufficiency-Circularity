@@ -1,10 +1,10 @@
-# The Omitted Role of Trade in Critical Mineral Sufficiency and Circularity Potential
+# Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries
 
-Replication materials for Busch *et al.* (*Submitted*). The Omitted Role of Trade in Critical Mineral Sufficiency and Circularity Potential.
+Replication materials for Busch *et al.* (*Submitted*). Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries.
 
 The following code and data allows for the reproduction of all the tables, figures and calculations made in the article, both in the main body and supplementary information.
 
-If you identify any error in the source code or have any further suggestions please contact Pablo Busch at pmbusch@ucdavis.edu.
+If you identify any error in the source code or have any further suggestions please contact Pablo Busch at pmbuschh@gmail.com.
 
 
 # Organization

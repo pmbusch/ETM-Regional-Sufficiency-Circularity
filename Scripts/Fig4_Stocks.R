@@ -249,7 +249,8 @@ library(ggpattern)
 p1 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
   # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
   geom_area_pattern(aes(fill=categ,pattern = Sector),
-                    pattern_alpha=0.4,pattern_size=0.1,
+                    pattern_fill="white",
+                    pattern_alpha=0.6,pattern_size=0.1,
                     col="black",linewidth=0.1)+
   geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
@@ -269,14 +270,17 @@ p1 <- ggplot(data_fig_c,aes(Year,cumTons))+
                      name=paste0("HHI: ",round(hhi[1,2],2)))+
   # scale_alpha_manual(values = c("Reserve"=1,"EV"=0.8,"EoL LIB"=0.6)) +
   coord_cartesian(expand=F)+
-  labs(x="",title="\u00A0\u00A0\u00A0Lithium Stock [million tons]",tag="(a)")+
+  labs(pattern="",x="",title="\u00A0\u00A0\u00A0Lithium Stock [million tons]",tag="(a)")+
   theme_bw(8)+
+  guides(fill="none",
+         pattern = guide_legend(reverse = TRUE,
+         override.aes = list(fill = "grey60")))+
   theme(panel.grid=element_blank(),
         plot.tag = element_text(face = "bold"),
         plot.tag.position = c(0.03, 1),
         axis.title.y = element_text(margin=margin(0,-5,-20,0)),
         axis.title.y.right = element_text(angle = 90,margin=margin(0,0,0,-5)),
-        legend.position = "none")
+        legend.position = "bottom")
 p1
 
 # add fig to the right
@@ -310,7 +314,9 @@ p1_bar
 
 library(cowplot)
 p1_bar <- p1_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
-p_li <- plot_grid(p1,p1_bar,nrow=1,rel_widths = c(0.93,0.07)) 
+# p_li <- plot_grid(p1,p1_bar,nrow=1,rel_widths = c(0.93,0.07)) # old
+p_li <- p1
+
 p_li
 
 ## Nickel -----
@@ -338,7 +344,8 @@ label_fig <- rbind(label_fig,label_fig2)
 p2 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
   # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
   geom_area_pattern(aes(fill=categ,pattern = Sector),
-                    pattern_alpha=0.4,pattern_size=0.1,
+                    pattern_fill="white",
+                    pattern_alpha=0.6,pattern_size=0.1,
                     col="black",linewidth=0.1)+
   geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
@@ -397,7 +404,9 @@ p2_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         panel.border = element_blank())
 
 p2_bar <- p2_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
-p_ni <- plot_grid(p2,p2_bar,nrow=1,rel_widths = c(0.93,0.07)) 
+# p_ni <- plot_grid(p2,p2_bar,nrow=1,rel_widths = c(0.93,0.07)) # old 
+p_ni <- p2 
+
 p_ni
 
 ## Cobalt ------
@@ -452,7 +461,8 @@ label_fig <- rbind(label_fig,label_fig2)
 p3 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
   # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
   geom_area_pattern(aes(fill=categ,pattern = Sector),
-                    pattern_alpha=0.4,pattern_size=0.1,
+                    pattern_fill="white",
+                    pattern_alpha=0.6,pattern_size=0.1,
                     col="black",linewidth=0.1)+
   geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
@@ -514,7 +524,8 @@ p3_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         panel.border = element_blank())
 
 p3_bar <- p3_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
-p_co <- plot_grid(p3,p3_bar,nrow=1,rel_widths = c(0.93,0.07)) 
+# p_co <- plot_grid(p3,p3_bar,nrow=1,rel_widths = c(0.93,0.07)) #old
+p_co <- p3
 p_co
 
 
@@ -541,7 +552,8 @@ label_fig <- rbind(label_fig,label_fig2)
 p4 <- ggplot(data_fig_c,aes(Year,cumTons))+ 
   # geom_area(aes(fill=categ,alpha=Sector),col="black",linewidth=0.1)+
   geom_area_pattern(aes(fill=categ,pattern = Sector),
-                    pattern_alpha=0.4,pattern_size=0.1,
+                    pattern_fill="white",
+                    pattern_alpha=0.6,pattern_size=0.1,
                     col="black",linewidth=0.1)+
   geom_line(data=data_sector,aes(group=Sector),col="black",linewidth=1)+
   geom_text(data=label_fig,aes(label = lab,group=categ,angle=angle),size=7*5/14 * 0.8,
@@ -599,19 +611,26 @@ p4_bar <- ggplot(data_bar,aes(x,cumTons,group = Sector))+
         panel.border = element_blank())
 
 p4_bar <- p4_bar+theme(plot.margin = margin(-5,0,6,-5)) #trbl
-p_gr <- plot_grid(p4,p4_bar,nrow=1,rel_widths = c(0.93,0.07)) 
+p_gr <- plot_grid(p4,p4_bar,nrow=1,rel_widths = c(0.93,0.07)) # old 
+p_gr <- p4
 p_gr
 
 # Merge them together ----
 
-plot_grid(p_li,p_ni,p_co,p_gr,ncol=2)
+library(cowplot)
+legend = get_plot_component(p_li,'guide-box-bottom', return_all = TRUE)
+ggdraw(legend)
+p_li <- p_li+theme(legend.position = "none")
+
+plot_grid(plot_grid(p_li,p_ni,p_co,p_gr,ncol=2),
+          legend,nrow=2,rel_heights = c(0.9,0.1))
 
 
 ggsave("Figures/MineralStock.png", 
-       ggplot2::last_plot(),units="cm",dpi=600,width=17.8,height=8.7*1.5)
+       ggplot2::last_plot(),units="cm",dpi=600,width=17.8,height=8.7*1.6)
 
 
-pdf("Figures/pdf/fig4.pdf",width=17.8/2.54,height=8.7*1.5/2.54)
+pdf("Figures/pdf/fig4.pdf",width=17.8/2.54,height=8.7*1.6/2.54)
 ggplot2::last_plot()
 dev.off()
 
