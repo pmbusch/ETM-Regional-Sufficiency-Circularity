@@ -68,7 +68,8 @@ f.TradeRatios <- function(sales,MONET=T){
 }
 
 # debug - MONET
-sales <- icct %>% filter(Year==2022)
+sales <- icct %>% filter(Year==2050)
+sales <- icct %>% group_by(c) %>% reframe(Sales=sum(Sales))
 prod <- f.TradeRatios(sales$Sales)
 # Basic Check
 sum(sales$Sales);sum(prod)

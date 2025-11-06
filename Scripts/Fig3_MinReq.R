@@ -248,15 +248,18 @@ data_fig2 %>%
   scale_fill_manual(values = c("mtons" = "darkgrey", "reserve" = "#6a3d9a"))+
   labs(x="",y="")+
   coord_flip(expand = F)+
+  scale_x_discrete(expand=c(0,0)) +
+  scale_y_continuous(expand=c(0,0))+
   theme_minimal()+
   theme(panel.grid = element_blank(),
         axis.ticks = element_blank(),
+        plot.margin = margin(0,0,0,0),
         axis.text=element_blank(),
         legend.position = "none")
 
 ggsave("Figures/Graphical/World_li.png",
        units="cm",dpi=600,
-       height = 2,width = 2)
+       height = 1.45,width = 1.45)
 
 # Same but for countries
 data_fig2 <- data_fig %>% 
@@ -276,16 +279,17 @@ data_fig2 %>%
                                "reserve" = "#6a3d9a"))+
   labs(x="",y="")+
   coord_flip(expand = F)+
+  scale_x_discrete(expand=c(0,0)) +
+  scale_y_continuous(expand=c(0,0))+
   theme_minimal()+
   theme(panel.grid = element_blank(),
         axis.ticks = element_blank(),
         axis.text=element_blank(),
+        plot.margin = margin(0,0,0,0),
         legend.position = "none")
 
 ggsave("Figures/Graphical/Countries_li.png",
        units="cm",dpi=600,
-       height = 2,width = 2)
-
-
+       height = 1.7,width = 2.2)
 
 # EoF

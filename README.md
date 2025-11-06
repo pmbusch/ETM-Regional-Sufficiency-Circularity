@@ -1,6 +1,6 @@
 # Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries
 
-Replication materials for Busch *et al.* (*Submitted*). Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries.
+Replication materials for [Busch *et al.* (2025)](https://doi.org/10.1021/acs.est.5c12420).
 
 The following code and data allows for the reproduction of all the tables, figures and calculations made in the article, both in the main body and supplementary information.
 
@@ -37,7 +37,7 @@ The R code requires the following packages: *tidyverse*, *readr*,*readxl*,*ggplo
 install.packages(c("tidyverse","readr","readxl","ggplot2","data.table","dplyr","gridExtra","reshape2","scales","RColorBrewer","sf","ggrepel"), dependencies = T)
 ```
 
-The model has only been tested using OS Windows 10 and 11, but it should work on Mac and Linux as well using **R** and **julia**
+The model has only been tested using OS Windows 10 and 11, but it should work on Mac and Linux as well using **R**.
 
 # License
 This project is covered under the **MIT License**
