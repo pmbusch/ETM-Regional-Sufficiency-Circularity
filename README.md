@@ -24,7 +24,7 @@ This GitHub contains organization notes in each folder describing the, and each 
 
 ## Runtime
 
-Users can either used the uploaded model results to replicate figures, or run new instances to generate results for the demand or supply model. Some results are uploaded in the GitHub in a compressed format, so please make sure to unzip them. 
+Users can either used the uploaded model results to replicate figures, or run new instances to generate results for the material flow analysis model. Some results are uploaded in the GitHub in a compressed format, so please make sure to unzip them. 
 
 Please note that each demand scenarion calculation takes around 3 minutes to run.
 
